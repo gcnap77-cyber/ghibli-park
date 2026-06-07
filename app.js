@@ -180,6 +180,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Audience View Update function
   function updateAudienceView() {
     const areaSatoyamaBadges = document.querySelectorAll('.area-card .ticket-badge.satoyama');
+    const premiumOfficial = document.getElementById('premium-official-link');
+    const premiumKlook = document.getElementById('premium-klook-link');
+    const standardOfficial = document.getElementById('standard-official-link');
+    const standardKlook = document.getElementById('standard-klook-link');
+    const satoyamaOfficial = document.getElementById('satoyama-official-link');
 
     if (isOverseas) {
       toggleOverseas.classList.add('active');
@@ -197,6 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
         <li style="color:var(--primary); font-weight:700; font-size:0.8rem; margin-top:0.4rem;">💡 這是海外遊客在 Lawson 英文官網 / Klook 買到的版本</li>
       `;
+
+      // Update purchase links for Overseas
+      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park-en/');
+      if (premiumKlook) premiumKlook.style.display = 'inline-flex';
+      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park-en/');
+      if (standardKlook) standardKlook.style.display = 'inline-flex';
 
       // If active ticket was satoyama (which is locked), switch to premium
       const activeCard = document.querySelector('.ticket-card.active');
@@ -220,6 +231,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
         <li style="color:var(--primary); font-weight:700; font-size:0.8rem; margin-top:0.4rem;">💡 這是日本國內版 (需日本手機門號簡訊認證)</li>
       `;
+
+      // Update purchase links for Domestic
+      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park/');
+      if (premiumKlook) premiumKlook.style.display = 'none';
+      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park/');
+      if (standardKlook) standardKlook.style.display = 'none';
+      if (satoyamaOfficial) satoyamaOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park/');
     }
     
     // Refresh the ticket filter
@@ -287,6 +305,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateAudienceView();
   });
 
-  // 6. Initialize page with 'overseas' and 'premium' ticket filter
+  // 6. Prevent ticket card clicks when clicking purchase links
+  const buyLinks = document.querySelectorAll('.buy-link-btn');
+  buyLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
+
+  // 7. Initialize page with 'overseas' and 'premium' ticket filter
   updateAudienceView();
 });

@@ -352,6 +352,50 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.ticket-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.purchase-links-inline {
+  display: inline-flex;
+  gap: 0.4rem;
+  z-index: 10;
+}
+
+.buy-link-btn {
+  background-color: var(--primary);
+  color: #ffffff !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  white-space: nowrap;
+}
+
+.buy-link-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.buy-link-btn.klook-btn {
+  background-color: #ff5722; /* Klook Orange */
+}
+
+.buy-link-btn.klook-btn:hover {
+  background-color: #e64a19;
+}
+
 .ticket-card .price {
   font-family: var(--font-en);
   font-size: 1.6rem;
