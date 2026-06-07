@@ -853,14 +853,43 @@ footer .disclaimer {
     padding: 1.5rem;
   }
 }
+.map-scroll-hint {
+  display: none;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--accent-blue);
+  font-weight: 700;
+  margin-top: -1.5rem;
+  margin-bottom: 1.2rem;
+  animation: pulse 2s infinite;
+}
 
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
   }
   
+  .map-section {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+  
+  .map-scroll-hint {
+    display: block;
+  }
+  
   .map-container {
-    aspect-ratio: 4/3;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    aspect-ratio: auto;
+    height: 380px;
+  }
+  
+  .map-svg {
+    width: 675px;
+    height: 380px;
+    flex-shrink: 0;
   }
   
   .tips-section {
