@@ -204,10 +204,16 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Update purchase links for Overseas
-      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/g-park-en/');
-      if (premiumKlook) premiumKlook.style.display = 'inline-flex';
-      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/g-park-en/');
-      if (standardKlook) standardKlook.style.display = 'inline-flex';
+      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
+      if (premiumKlook) {
+        premiumKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
+        premiumKlook.style.display = 'inline-flex';
+      }
+      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
+      if (standardKlook) {
+        standardKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
+        standardKlook.style.display = 'inline-flex';
+      }
 
       // If active ticket was satoyama (which is locked), switch to premium
       const activeCard = document.querySelector('.ticket-card.active');
