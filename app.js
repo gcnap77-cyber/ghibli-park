@@ -204,12 +204,15 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Update purchase links for Overseas
-      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
+      if (premiumOfficial) premiumOfficial.style.display = 'none'; // Lawson does not sell Premium overseas
       if (premiumKlook) {
         premiumKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
         premiumKlook.style.display = 'inline-flex';
       }
-      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
+      if (standardOfficial) {
+        standardOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
+        standardOfficial.style.display = 'inline-flex';
+      }
       if (standardKlook) {
         standardKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
         standardKlook.style.display = 'inline-flex';
@@ -239,11 +242,20 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Update purchase links for Domestic
-      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
+      if (premiumOfficial) {
+        premiumOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
+        premiumOfficial.style.display = 'inline-flex';
+      }
       if (premiumKlook) premiumKlook.style.display = 'none';
-      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
+      if (standardOfficial) {
+        standardOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
+        standardOfficial.style.display = 'inline-flex';
+      }
       if (standardKlook) standardKlook.style.display = 'none';
-      if (satoyamaOfficial) satoyamaOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
+      if (satoyamaOfficial) {
+        satoyamaOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
+        satoyamaOfficial.style.display = 'inline-flex';
+      }
     }
     
     // Refresh the ticket filter
