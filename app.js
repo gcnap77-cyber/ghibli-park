@@ -204,9 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Update purchase links for Overseas
-      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park-en/');
+      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/g-park-en/');
       if (premiumKlook) premiumKlook.style.display = 'inline-flex';
-      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park-en/');
+      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/g-park-en/');
       if (standardKlook) standardKlook.style.display = 'inline-flex';
 
       // If active ticket was satoyama (which is locked), switch to premium
@@ -233,11 +233,11 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Update purchase links for Domestic
-      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park/');
+      if (premiumOfficial) premiumOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
       if (premiumKlook) premiumKlook.style.display = 'none';
-      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park/');
+      if (standardOfficial) standardOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
       if (standardKlook) standardKlook.style.display = 'none';
-      if (satoyamaOfficial) satoyamaOfficial.setAttribute('href', 'https://l-tike.com/ghibli-park/');
+      if (satoyamaOfficial) satoyamaOfficial.setAttribute('href', 'https://l-tike.com/bw-ticket/ghibli/ghibli-park/');
     }
     
     // Refresh the ticket filter
