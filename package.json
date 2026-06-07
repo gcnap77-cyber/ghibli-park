@@ -1,0 +1,17 @@
+{
+  "name": "ghibli-park-guide",
+  "version": "1.0.0",
+  "description": "Ghibli Park and Moricoro Park Interactive Guide",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 5000 ."
+  },
+  "keywords": [
+    "ghibli",
+    "park",
+    "guide",
+    "moricoro"
+  ],
+  "author": "Antigravity",
+  "license": "ISC"
+}

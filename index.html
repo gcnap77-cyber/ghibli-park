@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吉卜力公園 x 莫里科羅公園 完全導覽與票種攻略手冊 | Ghibli Park Guide</title>
+  <meta name="description" content="最容易理解的吉卜力公園繁體中文導覽！結合愛・地球博紀念公園（莫里科羅公園）交通指南，解析 2026 年最新門票種類（大散步券高級版、標準版、里山散步券）差別，提供互動式地圖，助您規劃完美吉卜力之旅。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div class="hero-badge">Aichi, Japan • 愛知縣長久手市</div>
+    <h1>吉卜力公園 <span>完全導覽手冊</span></h1>
+    <p class="hero-subtitle">走進宮崎駿與吉卜力工作室的動畫世界！這裡沒有雲霄飛車，只有沉浸式的森林與經典建築。本站為您整理最詳細的園區介紹、交通指引與 2026 最新票務攻略。</p>
+  </header>
+
+  <!-- Relationship Clarification Banner -->
+  <div class="relation-box">
+    <div class="relation-title">
+      <span class="relation-icon">i</span>
+      <span>重要觀念：吉卜力公園是在公共公園裡面嗎？</span>
+    </div>
+    <div class="relation-text">
+      是的！<strong>「吉卜力公園」</strong>並非一個封閉式的主題樂園，而是分散建在免費開放的<strong>「愛・地球博紀念公園（暱稱：莫里科羅公園）」</strong>綠地中。公共步道與部分地標（如入口處的電梯塔）是<strong>完全免費</strong>的。只有要進入吉卜力的 5 大園區與特色建築內部時，才需要出示<strong>事前預約好的吉卜力門票</strong>。
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- Section: Ticket Guide -->
+    <section id="tickets" class="ticket-section">
+      <div class="section-header">
+        <h2>選擇您的預計票種</h2>
+        <p>點選下方不同票種，地圖與下方的園區介紹將會自動篩選出「您可以參觀的範圍」！</p>
+      </div>
+
+      <!-- Audience Toggle -->
+      <div class="audience-toggle-container">
+        <span class="toggle-label">您的身份別（購票管道）：</span>
+        <div class="toggle-buttons">
+          <button class="toggle-btn active" id="toggle-overseas">海外遊客 (Lawson 英文官網 / Klook)</button>
+          <button class="toggle-btn" id="toggle-domestic">日本國內居民版 (需日本簡訊認證)</button>
+        </div>
+      </div>
+
+      <div class="traffic-link-desc" style="text-align: center; margin-top: -1.8rem; margin-bottom: 2.2rem; font-size: 0.9rem; color: var(--text-muted);">
+        🎫 購票說明與管道：海外遊客請利用 Lawson 英文官網或 Klook。交通詳情請參閱 <a href="#transit" style="text-decoration: underline; font-weight: 700; color: var(--primary);">🚗 聯外交通指引</a>。
+      </div>
+
+      <div class="ticket-grid">
+        <!-- Ticket Card 1: Premium -->
+        <div class="ticket-card active" data-ticket="premium" id="btn-premium">
+          <span class="ticket-badge premium">高級首選</span>
+          <h3>大散步券 高級版</h3>
+          <p class="price">¥7,300 <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥7,800 <span>假日 / 成人</span></p>
+          <ul class="ticket-features">
+            <li>暢遊全部 5 大園區</li>
+            <li><strong>可進入所有經典建築內部</strong></li>
+            <li>含地球屋、草壁家、霍爾城堡等</li>
+            <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
+            <li>適合：想要完整體驗的吉卜力鐵粉</li>
+          </ul>
+        </div>
+
+        <!-- Ticket Card 2: Standard -->
+        <div class="ticket-card" data-ticket="standard" id="btn-standard">
+          <span class="ticket-badge standard">性價比高</span>
+          <h3>大散步券 標準版</h3>
+          <p class="price">¥3,300 <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥3,800 <span>假日 / 成人</span></p>
+          <ul class="ticket-features" id="standard-features">
+            <!-- Dynamically populated by JS based on domestic/overseas toggle -->
+            <li class="standard-scope">僅限 3 大園區 (大倉庫、魔法之里、魔女之谷)</li>
+            <li class="unavailable">不含青春之丘、咚咚吭森林</li>
+            <li class="unavailable">不可進入主題建築物內部</li>
+            <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
+            <li>適合：海外遊客預算有限、只想玩大倉庫者</li>
+          </ul>
+        </div>
+
+        <!-- Ticket Card 3: Satoyama -->
+        <div class="ticket-card" data-ticket="satoyama" id="btn-satoyama">
+          <!-- Domestic Lock Overlay -->
+          <div class="domestic-only-overlay show" id="satoyama-overlay">
+            <div class="overlay-lock-icon">🔒</div>
+            <div class="overlay-title">僅限日本國內購買</div>
+            <div class="overlay-desc">Lawson 英文官網與 Klook 無販售此票種，需日本手機號碼與簡訊驗證才可購買</div>
+          </div>
+          <span class="ticket-badge satoyama">2026年7月新設</span>
+          <h3>里山散步券</h3>
+          <p class="price">¥2,200 <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥2,500 <span>假日 / 成人</span></p>
+          <ul class="ticket-features">
+            <li>僅限 3 大戶外園區</li>
+            <li>魔女之谷、魔法之里、咚咚吭森林</li>
+            <li class="unavailable">不含「吉卜力大倉庫」</li>
+            <li class="unavailable">不含「青春之丘」</li>
+            <li class="unavailable">不可進入建築物內部</li>
+            <li>適合：以散步、購買周邊、用餐為主的遊客</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Interactive Map -->
+    <section id="map" class="map-section">
+      <div class="section-header">
+        <h2>互動園區地圖</h2>
+        <p>點擊地圖上的園區，可以直接跳轉到下方看詳細介紹。目前地圖已套用上述選定的票種權限！</p>
+      </div>
+
+      <div class="map-container">
+        <svg class="map-svg" viewBox="0 0 800 450">
+          <!-- Main background representing Moricoro Park -->
+          <rect class="map-bg-path" width="800" height="450" rx="16" />
+          
+          <!-- Public pathways inside Moricoro Park -->
+          <!-- Main Entrance Path -->
+          <path class="map-road" d="M 400 40 L 400 120 L 400 200 L 430 220 L 510 200" />
+          <!-- Circular road around the park -->
+          <path class="map-road" d="M 400 120 C 250 120, 200 220, 250 320 C 300 380, 500 420, 650 350 C 700 280, 680 180, 550 130 C 510 130, 420 120, 400 120 Z" />
+          
+          <!-- Shuttle bus route (dashed blue) -->
+          <path class="map-shuttle-route" d="M 410 45 C 260 115, 210 215, 260 315 C 310 375, 490 415, 640 345 C 690 275, 670 175, 540 125 Z" />
+          
+          <!-- APM Catbus Route (dashed gold between Mononoke and Dondoko) -->
+          <path class="map-catbus-route" d="M 600 160 Q 640 220 650 310" />
+
+          <!-- Details & Roads overlay style -->
+          <path class="map-road-dash" d="M 400 40 L 400 120 L 400 200 L 430 220 L 510 200" />
+          <path class="map-road-dash" d="M 400 120 C 250 120, 200 220, 250 320 C 300 380, 500 420, 650 350 C 700 280, 680 180, 550 130 C 510 130, 420 120, 400 120 Z" />
+
+          <!-- Station / Park Entrance Node (Public Area) -->
+          <g transform="translate(400, 40)">
+            <circle r="12" fill="var(--secondary)" />
+            <text y="-18" font-family="var(--font-zh)" font-size="10" font-weight="700" fill="var(--secondary)" text-anchor="middle">愛・地球博紀念公園站 (Linimo)</text>
+            <text y="3" font-size="10" fill="#fff" text-anchor="middle">🚉</text>
+          </g>
+
+          <!-- Free Elevator Tower Node (Public Area) -->
+          <g transform="translate(400, 75)">
+            <circle r="10" fill="var(--accent-blue)" />
+            <text x="15" y="4" font-family="var(--font-zh)" font-size="9" font-weight="700" fill="var(--accent-blue)">時鐘電梯塔 (免費)</text>
+            <text x="0" y="3" font-size="8" fill="#fff" text-anchor="middle">🏰</text>
+          </g>
+
+          <!-- Interactive Area: Ghibli's Grand Warehouse -->
+          <g class="map-area-group" id="map-warehouse" data-area="warehouse">
+            <polygon class="map-area-polygon" points="360,180 440,180 450,230 350,230" />
+            <g class="map-icon">
+              <image href="images/areas_warehouse.png" x="384" y="189" width="32" height="32" />
+            </g>
+            <text class="map-text" x="400" y="238">吉卜力大倉庫</text>
+          </g>
+
+          <!-- Interactive Area: Hill of Youth -->
+          <g class="map-area-group" id="map-youth" data-area="youth">
+            <polygon class="map-area-polygon" points="300,90 370,90 360,130 290,130" />
+            <g class="map-icon">
+              <image href="images/areas_youth.png" x="314" y="94" width="32" height="32" />
+            </g>
+            <text class="map-text" x="330" y="138">青春之丘</text>
+          </g>
+
+          <!-- Interactive Area: Valley of Witches -->
+          <g class="map-area-group" id="map-witches" data-area="witches">
+            <polygon class="map-area-polygon" points="180,260 260,260 270,330 170,330" />
+            <g class="map-icon">
+              <image href="images/areas_witches.png" x="204" y="279" width="32" height="32" />
+            </g>
+            <text class="map-text" x="220" y="342">魔女之谷</text>
+          </g>
+
+          <!-- Interactive Area: Mononoke Village -->
+          <g class="map-area-group" id="map-mononoke" data-area="mononoke">
+            <polygon class="map-area-polygon" points="560,120 640,120 630,170 550,170" />
+            <g class="map-icon">
+              <image href="images/areas_mononoke.png" x="579" y="129" width="32" height="32" />
+            </g>
+            <text class="map-text" x="595" y="182">魔法之里</text>
+          </g>
+
+          <!-- Interactive Area: Dondoko Forest -->
+          <g class="map-area-group" id="map-dondoko" data-area="dondoko">
+            <polygon class="map-area-polygon" points="610,310 680,300 690,360 620,370" />
+            <g class="map-icon">
+              <image href="images/areas_dondoko.png" x="634" y="319" width="32" height="32" />
+            </g>
+            <text class="map-text" x="650" y="382">動動力森林</text>
+          </g>
+
+          <!-- Catbus Route Label -->
+          <g transform="translate(640, 240)">
+            <rect x="-45" y="-10" width="90" height="20" rx="10" fill="rgba(212, 175, 55, 0.9)" />
+            <text y="4" font-family="var(--font-zh)" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">APM 貓巴士路線</text>
+          </g>
+
+          <!-- FREE SHUTTLE BUS STOPS (公共免費接駁車站) -->
+          <!-- Bus Stop 1: 北口巴士站 -->
+          <g transform="translate(370, 50)">
+            <circle r="6" fill="var(--accent-blue)" stroke="#fff" stroke-width="1.5" />
+            <text x="10" y="3" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="var(--accent-blue)">🚏 北口站 (起點)</text>
+          </g>
+
+          <!-- Bus Stop 2: 魔法之里巴士站 -->
+          <g transform="translate(540, 130)">
+            <circle r="6" fill="var(--accent-blue)" stroke="#fff" stroke-width="1.5" />
+            <text x="-70" y="3" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="var(--accent-blue)">魔法之里站 🚏</text>
+          </g>
+
+          <!-- Bus Stop 3: 吉卜力大倉庫巴士站 -->
+          <g transform="translate(460, 190)">
+            <circle r="6" fill="var(--accent-blue)" stroke="#fff" stroke-width="1.5" />
+            <text x="10" y="3" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="var(--accent-blue)">🚏 大倉庫/溜冰場站</text>
+          </g>
+
+          <!-- Bus Stop 4: 日本庭園/魔女之谷巴士站 -->
+          <g transform="translate(265, 260)">
+            <circle r="6" fill="var(--accent-blue)" stroke="#fff" stroke-width="1.5" />
+            <text x="-105" y="3" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="var(--accent-blue)">日本庭園/魔女之谷站 🚏</text>
+          </g>
+
+          <!-- Bus Stop 5: 咚咚吭森林巴士站 -->
+          <g transform="translate(600, 360)">
+            <circle r="6" fill="var(--accent-blue)" stroke="#fff" stroke-width="1.5" />
+            <text x="10" y="3" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="var(--accent-blue)">🚏 咚咚吭森林站</text>
+          </g>
+
+          <!-- PARK GATES & INTERSECTIONS (公園各出入口與主要停車場) -->
+          <!-- North Gate & Parking -->
+          <g transform="translate(450, 25)">
+            <rect x="-3" y="-3" width="6" height="6" fill="#7f8c8d" />
+            <text x="8" y="3.5" font-family="var(--font-zh)" font-size="7.5" fill="#7f8c8d">🚗 北口停車場 (P1/P2)</text>
+          </g>
+
+          <!-- West Gate & Parking -->
+          <g transform="translate(190, 180)">
+            <rect x="-3" y="-3" width="6" height="6" fill="#7f8c8d" />
+            <text x="-80" y="3" font-family="var(--font-zh)" font-size="7.5" fill="#7f8c8d">西口停車場 (P3) 🚗</text>
+          </g>
+
+          <!-- South Gate & Parking -->
+          <g transform="translate(480, 420)">
+            <rect x="-3" y="-3" width="6" height="6" fill="#7f8c8d" />
+            <text x="8" y="3" font-family="var(--font-zh)" font-size="7.5" fill="#7f8c8d">🚗 南口停車場 (P4)</text>
+          </g>
+
+          <!-- East Gate (Holiday Only) -->
+          <g transform="translate(710, 200)">
+            <rect x="-3" y="-3" width="6" height="6" fill="#7f8c8d" />
+            <text x="-80" y="3" font-family="var(--font-zh)" font-size="7.5" fill="#7f8c8d">東口停車場 (假日) 🚗</text>
+          </g>
+
+        </svg>
+      </div>
+
+      <!-- Map Legend -->
+      <div class="map-legend">
+        <div class="legend-item">
+          <div class="legend-color public"></div>
+          <span>免費公共公園區</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color ghibli"></div>
+          <span>吉卜力收費園區</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color road"></div>
+          <span>公園內主要人行道</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color bus"></div>
+          <a href="#in-park-transport" style="cursor: pointer; text-decoration: underline; color: var(--accent-blue); font-weight: 600;">免費公園巡迴巴士路線 (點擊看說明)</a>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color catbus"></div>
+          <a href="#in-park-transport" style="cursor: pointer; text-decoration: underline; color: var(--accent-gold); font-weight: 600;">付費 APM 貓巴士路線 (點擊看說明)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Area Details -->
+    <section id="areas" class="areas-section">
+      <div class="section-header">
+        <h2>園區詳細介紹與票種攻略</h2>
+        <p>點選各區域深入了解遊玩重點、包含建築物與重要限制。</p>
+      </div>
+
+      <!-- Area 1: Ghibli's Grand Warehouse -->
+      <div class="area-card" id="area-warehouse" data-areas="warehouse">
+        <div class="area-visual">
+          <div class="area-badge-container">
+            <span class="ticket-badge premium">高級版可進</span>
+            <span class="ticket-badge standard">標準版可進</span>
+          </div>
+          <div class="area-anime-theme">吉卜力工作室多部經典作品</div>
+          <div class="area-title-group">
+            <h3><a href="https://ghibli-park.jp/en/about/ghiblisgrandwarehouse.html" target="_blank" rel="noopener" title="前往吉卜力官網查看「吉卜力大倉庫」官方資訊">吉卜力大倉庫 <span class="jp">ジブリの大倉庫</span> ↗</a></h3>
+          </div>
+          <div class="area-illustrate-box">
+            <img src="images/areas_warehouse.png" alt="吉卜力大倉庫" class="area-illustrate-img">
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top: 0.8rem;">全室內的「吉卜力大博覽會」，包含名場面展覽、兒童遊樂場與小電影院。</p>
+          </div>
+          <div class="area-ticket-status status-allowed" id="status-warehouse">
+            <strong>目前票種狀態：</strong> <span>可進入參觀</span>
+          </div>
+        </div>
+
+        <div class="area-content">
+          <p class="area-summary">這是吉卜力公園的核心，是由舊溫水游泳池改建而成的超大型室內展館。所有的經典週邊與最熱門的名場面合影都在這裡。</p>
+          
+          <div class="highlights-box">
+            <h4>✨ 必看與必玩亮點：</h4>
+            <ul class="highlights-list">
+              <li><strong>吉卜力名場面展</strong>：與無臉男在電車上合照。</li>
+              <li><strong>天空之城巨神兵</strong>：極具震撼的等身大機器人。</li>
+              <li><strong>獵戶座電影院</strong>：播映吉卜力美術館限定的短篇動畫。</li>
+              <li><strong>貓巴士遊樂區</strong>：專為小學生以下設計的毛茸茸貓巴士。</li>
+              <li><strong>冒險飛行團</strong>：全園區最大、最齊全的紀念品商店。</li>
+              <li><strong>龍頭飛船</strong>：懸掛在半空中，長達 6.3 公尺的飛船。</li>
+            </ul>
+          </div>
+
+          <div class="guide-box">
+            <h4>💡 攻略與重要限制：</h4>
+            <ul class="guide-list">
+              <li class="time"><strong>指定入場時間</strong>：購票時必須選擇大倉庫的入場時段（如 10:00、12:00 等）。必須在指定時間後 1 小時內入場。</li>
+              <li class="warn"><strong>禁止重複入場</strong>：一旦離開大倉庫，就無法再次進入，請務必逛完並買足紀念品再離開。</li>
+              <li class="warn"><strong>排隊限制</strong>：名場面展（無臉男合照）經常要排隊 30-60 分鐘，建議一進大倉庫就先去排隊，或者安排在較晚的時間。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 2: Hill of Youth -->
+      <div class="area-card" id="area-youth" data-areas="youth">
+        <div class="area-visual">
+          <div class="area-badge-container">
+            <span class="ticket-badge premium">高級版可進 (室內)</span>
+            <span class="ticket-badge standard">標準版可進 (外觀)</span>
+          </div>
+          <div class="area-anime-theme">《心之谷》、《貓的報恩》</div>
+          <div class="area-title-group">
+            <h3><a href="https://ghibli-park.jp/en/about/hillofyouth.html" target="_blank" rel="noopener" title="前往吉卜力官網查看「青春之丘」官方資訊">青春之丘 <span class="jp">青春の丘</span> ↗</a></h3>
+          </div>
+          <div class="area-illustrate-box">
+            <div class="illustration-main-row" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 0.8rem;">
+              <img src="images/areas_youth.png" alt="青春之丘" class="area-illustrate-img" style="margin-bottom: 0;">
+              <img src="images/building_earth_shop.png" alt="地球屋" class="building-illustrate-img" title="地球屋">
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-muted);">重現《心之谷》中的「地球屋」精品古董店與《貓的報恩》中的「貓咪事務所」。</p>
+          </div>
+          <div class="area-ticket-status status-allowed" id="status-youth">
+            <strong>目前票種狀態：</strong> <span>可進入參觀（大散步券高級版可進入地球屋室內）</span>
+          </div>
+        </div>
+
+        <div class="area-content">
+          <p class="area-summary">位於公園入口處的斜坡旁，以 19 世紀末的蒸汽龐克美學為基調，融合了明治與大正時代的建築風格。</p>
+          
+          <div class="highlights-box">
+            <h4>✨ 必看與必玩亮點：</h4>
+            <ul class="highlights-list">
+              <li><strong>地球屋</strong>：《心之谷》中爺爺的古董玩具店。</li>
+              <li><strong>貓咪事務所</strong>：迷你版的貓咪專屬辦公室。</li>
+              <li><strong>時鐘電梯塔</strong>：融合《天空之城》與《霍爾》風格，完全免費。</li>
+              <li><strong>古董郵筒</strong>：可以在地球屋前的郵筒寄出信件。</li>
+            </ul>
+          </div>
+
+          <div class="guide-box">
+            <h4>💡 攻略與重要限制：</h4>
+            <ul class="guide-list">
+              <li><strong>票種限制</strong>：如果拿的是<strong>標準版</strong>或<strong>里山券</strong>，您只能在圍欄外觀看地球屋的外觀，<strong>不能進入建築內部</strong>。只有高級版能進入地球屋室內觀看精美的小提琴工作坊與音樂鐘。</li>
+              <li class="time"><strong>參觀動線</strong>：因為它就在北口入口處，建議在剛入園或準備出園時順道參觀，避免往返奔波。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 3: Dondoko Forest -->
+      <div class="area-card" id="area-dondoko" data-areas="dondoko">
+        <div class="area-visual">
+          <div class="area-badge-container">
+            <span class="ticket-badge premium">高級版可進 (室內)</span>
+            <span class="ticket-badge standard">標準版可進 (外觀)</span>
+            <span class="ticket-badge satoyama">里山券可進 (山頂)</span>
+          </div>
+          <div class="area-anime-theme">《龍貓》</div>
+          <div class="area-title-group">
+            <h3><a href="https://ghibli-park.jp/en/about/dondokoforest.html" target="_blank" rel="noopener" title="前往吉卜力官網查看「動動力森林」官方資訊">動動力森林 <span class="jp">どんどこ森</span> ↗</a></h3>
+          </div>
+          <div class="area-illustrate-box">
+            <div class="illustration-main-row" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 0.8rem;">
+              <img src="images/areas_dondoko.png" alt="動動力森林" class="area-illustrate-img" style="margin-bottom: 0;">
+              <img src="images/building_totoro_house.png" alt="皋月和梅的家" class="building-illustrate-img" title="皋月和梅的家 (草壁家)">
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-muted);">隱藏在森林深處的龍貓世界，擁有「皋月和梅的家」以及山頂的巨型木造龍貓。</p>
+          </div>
+          <div class="area-ticket-status status-allowed" id="status-dondoko">
+            <strong>目前票種狀態：</strong> <span>可進入參觀</span>
+          </div>
+        </div>
+
+        <div class="area-content">
+          <p class="area-summary">這裡完整保留了 2005 年萬博會建造的「皋月和梅的家」，四周被茂密的森林環繞，是園區內最具有自然鄉村氣息的區域。</p>
+          
+          <div class="highlights-box">
+            <h4>✨ 必看與必玩亮點：</h4>
+            <ul class="highlights-list">
+              <li><strong>皋月和梅的家</strong>：真實還原動畫中的平房，連抽水機都可以操作。</li>
+              <li><strong>咚咚吭堂</strong>：山頂上高達 5 公尺的木造龍貓遊戲設施（僅限小學生以下進入內部）。</li>
+              <li><strong>咚咚吭森林步道</strong>：充滿松木香氣的自然森林步道。</li>
+            </ul>
+          </div>
+
+          <div class="guide-box">
+            <h4>💡 攻略與重要限制：</h4>
+            <ul class="guide-list">
+              <li class="warn"><strong>地理位置極遠</strong>：從大倉庫走到這裡需要 **20 - 25 分鐘**。建議一定要利用公園的<strong>免費接駁巴士</strong>或購買<strong>APM 貓巴士</strong>車票。</li>
+              <li><strong>里山散步券限制</strong>：若持有「里山散步券」，您只能走上山頂觀看咚咚吭堂（龍貓雕像），但<strong>不能進入</strong>山腳下的「皋月和梅的家」園區內。</li>
+              <li><strong>標準版限制</strong>：標準版無法進入「皋月和梅的家」內部，僅能在大門外與山頂步道參觀。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 4: Mononoke Village -->
+      <div class="area-card" id="area-mononoke" data-areas="mononoke">
+        <div class="area-visual">
+          <div class="area-badge-container">
+            <span class="ticket-badge premium">高級版可進</span>
+            <span class="ticket-badge standard">標準版可進</span>
+            <span class="ticket-badge satoyama">里山券可進</span>
+          </div>
+          <div class="area-anime-theme">《魔法公主》</div>
+          <div class="area-title-group">
+            <h3><a href="https://ghibli-park.jp/en/about/mononoke.html" target="_blank" rel="noopener" title="前往吉卜力官網查看「魔法之里」官方資訊">魔法之里 <span class="jp">もののけの里</span> ↗</a></h3>
+          </div>
+          <div class="area-illustrate-box">
+            <img src="images/areas_mononoke.png" alt="魔法之里" class="area-illustrate-img">
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top: 0.8rem;">以日本山村里山為原型，重現《魔法公主》中的「達達拉城」與巨型怪獸雕像。</p>
+          </div>
+          <div class="area-ticket-status status-allowed" id="status-mononoke">
+            <strong>目前票種狀態：</strong> <span>可進入參觀</span>
+          </div>
+        </div>
+
+        <div class="area-content">
+          <p class="area-summary">一個融合了傳統日式里山景觀的區域，展現了人與自然共生的氛圍。在這裡可以體驗烤日式五平餅。</p>
+          
+          <div class="highlights-box">
+            <h4>✨ 必看與必玩亮點：</h4>
+            <ul class="highlights-list">
+              <li><strong>乙事主滑梯</strong>：高達 3.4 公尺的巨型野豬神，背面是磨石子溜滑梯（僅限 12 歲以下滑行）。</li>
+              <li><strong>邪魔神雕像</strong>：高 2.8 公尺，色彩斑斕且充滿張力的雕像。</li>
+              <li><strong>達達拉城體驗舍</strong>：炭火燒烤傳統點心「五平餅」的體驗設施（需現場額外付費，約 ¥1,200）。</li>
+            </ul>
+          </div>
+
+          <div class="guide-box">
+            <h4>💡 攻略與重要限制：</h4>
+            <ul class="guide-list">
+              <li><strong>票種友善區</strong>：此區域**沒有限制室內建築內部**（因為主體都是戶外與半開放式體驗舍）。無論是大散步券（Premium/Standard）還是新設的里山券，體驗範圍都完全一樣！</li>
+              <li><strong>地理位置</strong>：位於大倉庫的東北側，離大倉庫步行約 10 分鐘，旁邊就是前往咚咚吭森林的「APM 貓巴士」乘車起點。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 5: Valley of Witches -->
+      <div class="area-card" id="area-witches" data-areas="witches">
+        <div class="area-visual">
+          <div class="area-badge-container">
+            <span class="ticket-badge premium">高級版可進 (室內)</span>
+            <span class="ticket-badge standard">標準版可進 (外觀)</span>
+            <span class="ticket-badge satoyama">里山券可進 (外觀)</span>
+          </div>
+          <div class="area-anime-theme">《魔女宅急便》、《霍爾的移動城堡》、《安雅與魔女》</div>
+          <div class="area-title-group">
+            <h3><a href="https://ghibli-park.jp/en/about/valleyofwitches.html" target="_blank" rel="noopener" title="前往吉卜力官網查看「魔女之谷」官方資訊">魔女之谷 <span class="jp">魔女の谷</span> ↗</a></h3>
+          </div>
+          <div class="area-illustrate-box">
+            <img src="images/areas_witches.png" alt="魔女之谷" class="area-illustrate-img" style="margin-bottom: 0.8rem;">
+            <div class="buildings-row" style="display: flex; align-items: center; justify-content: center; gap: 0.8rem; margin-bottom: 0.8rem; flex-wrap: wrap;">
+              <img src="images/building_okino_house.png" alt="歐其諾家" class="building-illustrate-img" title="歐其諾家 (琪琪家)">
+              <img src="images/building_howl_castle.png" alt="霍爾的移動城堡" class="building-illustrate-img" title="霍爾的移動城堡">
+              <img src="images/building_witch_house.png" alt="魔女之家" class="building-illustrate-img" title="魔女之家 (安雅家)">
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-muted);">吉卜力公園最大的主題園區！重現歐洲風情、巨型霍爾城堡與琪琪的麵包店。</p>
+          </div>
+          <div class="area-ticket-status status-allowed" id="status-witches">
+            <strong>目前票種狀態：</strong> <span>可進入參觀</span>
+          </div>
+        </div>
+
+        <div class="area-content">
+          <p class="area-summary">充滿異國風情的魔法小鎮，包含驚人的 20 公尺高「霍爾的移動城堡」，城堡每隔一段時間還會噴出蒸氣並微微晃動，非常震撼。</p>
+          
+          <div class="highlights-box">
+            <h4>✨ 必看與必玩亮點：</h4>
+            <ul class="highlights-list">
+              <li><strong>霍爾的移動城堡</strong>：超大型實體城堡，內部有霍爾的臥室、浴室與火魔卡西法。</li>
+              <li><strong>歐其諾家</strong>：《魔女宅急便》中琪琪的老家，包含媽媽的藥草調配室與琪琪的房間。</li>
+              <li><strong>魔女之家</strong>：《安雅與魔女》中魔女貝拉·雅加的奇幻工作室。</li>
+              <li><strong>琪琪的麵包店 (Guchokipanya)</strong>：販售美味的現烤麵包與劇中同款麵包。</li>
+              <li><strong>旋轉木馬與飛行機器</strong>：以吉卜力飛行器和動物為主題的精美遊樂設施（需現場額外買票）。</li>
+              <li><strong>熱風餐廳 (Hot Tin Roof)</strong>：提供獨特魔女特色簡餐與貓咪肉餡餅。</li>
+            </ul>
+          </div>
+
+          <div class="guide-box">
+            <h4>💡 攻略與重要限制：</h4>
+            <ul class="guide-list">
+              <li class="warn"><strong>2026年最新限制 (霍爾城堡入場)</strong>：自 2026 年 7 月起，若購買含魔女之谷特定設施的門票，<strong>「霍爾的移動城堡」內部觀覽將改為「指定入場時間限制」</strong>以維持參觀品質。</li>
+              <li><strong>標準版與里山券限制</strong>：<strong>不能進入</strong>霍爾城堡、歐其諾家、魔女之家的室內。但可以在魔女之谷購買麵包、用餐、搭乘旋轉木馬以及觀看城堡噴蒸氣的外觀。</li>
+              <li class="time"><strong>拍照建議</strong>：魔女之谷是網美打卡聖地，特別是傍晚燈光亮起時，城堡與歐洲街景非常有氛圍，建議安排在下午遊玩至閉園（17:00）。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Transit Info -->
+    <section id="transit" class="transit-section">
+      <div class="section-header">
+        <h2>聯外交通指引</h2>
+        <p>吉卜力公園位於愛知縣長久手市，以下為您整理最常用的聯外大眾交通攻略。</p>
+      </div>
+
+      <div class="transit-grid">
+        <!-- Transit 1: Subway + Linimo -->
+        <div class="transit-card">
+          <h4>🚇 地鐵 ＋ Linimo 磁浮列車 (最推薦)</h4>
+          <ul class="transit-steps">
+            <li>名古屋站 (搭乘地鐵東山線)</li>
+            <li>藤丘站 (藤が丘駅，抵達終點站後出站轉乘)</li>
+            <li>搭乘東部丘陵線 (Linimo 磁浮列車)</li>
+            <li>愛・地球博紀念公園站 (下車出站即達公園北口)</li>
+          </ul>
+          <div class="transit-meta">
+            <span><strong>單程時間</strong>：約 45 - 50 分鐘</span>
+            <span><strong>單程票價</strong>：合計約 ¥670 (地鐵 ¥310 + Linimo ¥360)</span>
+            <span><strong>優點</strong>：班次極多、不受交通堵塞影響，最準時！</span>
+          </div>
+        </div>
+
+        <!-- Transit 2: Direct Bus -->
+        <div class="transit-card">
+          <h4>🚌 名鐵直達巴士 (免轉乘首選)</h4>
+          <ul class="transit-steps">
+            <li>名古屋站名鐵百貨旁 (名鐵巴士中心 4 樓 24 號站牌)</li>
+            <li>搭乘前往「愛・地球博記念公園 (ジブリパーク)」直達巴士</li>
+            <li>愛・地球博紀念公園站 (直達北口巴士乘車處)</li>
+          </ul>
+          <div class="transit-meta">
+            <span><strong>單程時間</strong>：約 40 分鐘 (假日可能因塞車延長至 50-60 分鐘)</span>
+            <span><strong>單程票價</strong>：成人 ¥1,000 / 兒童 ¥500</span>
+            <span><strong>優點</strong>：一車直達免轉乘，適合行李多或帶長輩小孩同行者。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: In-Park Transport Guide -->
+    <section id="in-park-transport" class="transit-section" style="margin-top: 2.5rem; background: rgba(255, 255, 255, 0.95);">
+      <div class="section-header">
+        <h2>園內交通工具攻略 (免費巴士 vs. 龍貓 APM 貓巴士)</h2>
+        <p>吉卜力公園園區非常廣闊，善用園內交通工具可以幫您省下大量體力。以下為搭乘與購票細節：</p>
+      </div>
+
+      <div class="transit-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <!-- Transportation 1: Free Shuttle Bus -->
+        <div class="transit-card">
+          <h4 style="color: var(--accent-blue);">🚌 公園免費巡迴巴士 (不需買票)</h4>
+          <ul class="transit-steps" style="margin-bottom:1.2rem;">
+            <li><strong>如何搭乘</strong>：完全免費，不需事前預約，也不需要出示任何門票。看到車來直接排隊上車即可。</li>
+            <li><strong>路線規劃 (東線 - Ghibli 最實用)</strong>：
+              <br>• <strong>北口站 (起點)</strong> ➡️ <strong>魔法之里站</strong> ➡️ <strong>大倉庫/溜冰場站</strong> ➡️ <strong>日本庭園/魔女之谷站</strong> ➡️ <strong>咚咚吭森林站 (終點)</strong>。
+            </li>
+            <li><strong>發車班距</strong>：平日與假日約 **20 分鐘一班**，閉園前會加開班次。</li>
+            <li><strong>西線 (遊客較少用)</strong>：主要往返大摩天輪、西口停車場、溜冰場。若從西口入園才需要搭乘。</li>
+          </ul>
+          <div class="transit-meta">
+            <span><strong>推薦用法</strong>：由於大倉庫走到最遠的咚咚吭森林（龍貓家）需要 20-25 分鐘，推薦<strong>去程或回程搭配免費巴士</strong>，省去步行疲勞。</span>
+            <span><strong>注意事項</strong>：週末與旺季人潮眾多時容易客滿，建議提早 10 分鐘到站牌排隊。</span>
+          </div>
+        </div>
+
+        <!-- Transportation 2: APM Catbus -->
+        <div class="transit-card" style="border-color: rgba(212, 175, 55, 0.4);">
+          <h4 style="color: var(--accent-gold);">🐱 龍貓 APM 貓巴士 (付費體驗車)</h4>
+          <ul class="transit-steps" style="margin-bottom:1.2rem;">
+            <li><strong>如何購票</strong>：無法事前預約。必須在乘車點旁的<strong>「自動售票機」現場購票</strong>。支援現金與日本電子票證 (Suica, Pasmo, Manaca 等 IC 卡)。</li>
+            <li><strong>運行路線</strong>：僅往返於 **「魔法之里」 ↔ 「咚咚吭森林」** 之間的森林秘境便道 (車程約 10 分鐘，沿途可欣賞一般遊客無法進入的森林風景)。</li>
+            <li><strong>單程票價</strong>：
+              <br>• <strong>成人 (國中生以上)</strong>：單程 ¥1,000。
+              <br>• <strong>兒童 (4 歲至小學生)</strong>：單程 ¥500。
+              <br>• <strong>3歲以下</strong>：免費 (不佔位，需家長抱著)。
+              <br>• <strong>身障者與陪同者(限1人)</strong>：享半價優惠。
+            </li>
+            <li><strong>乘車體驗</strong>：使用豐田低速電動車 (APM) 改裝，毛茸茸的貓皮座椅、會發光的貓眼睛與耳朵，開車時還會播放龍貓電影配樂，儀式感十足！</li>
+          </ul>
+          <div class="transit-meta">
+            <span><strong>注意限制</strong>：<strong>僅售單程票</strong>。若想來回都搭，去程與回程需各買一次票。車票可能提早售罄，建議入園後提早購票。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Ghibli vs Moricoro Info & Tips -->
+    <section class="tips-section">
+      <!-- Card: Moricoro Park info -->
+      <div class="tips-card">
+        <h3>🌳 莫里科羅公園 (愛・地球博紀念公園) 介紹</h3>
+        <ul class="tips-card-list">
+          <li><strong>不用門票的地方</strong>：莫里科羅公園本身是一個巨大的都市公園，包含<strong>時鐘電梯塔、大草坪廣場、日本庭園、林間步道</strong>皆為免費開放，沒有買到吉卜力門票也可以來野餐散步。</li>
+          <li><strong>中部最大摩天輪</strong>：位於公園西側，可俯瞰整個長久手市與世博舊址（需額外付費搭乘）。</li>
+          <li><strong>愛知縣兒童綜合中心</strong>：超大型室內兒童遊戲館，門票極便宜（成人 ¥300，國中生以下免費），內有巨型迷宮、戲水區，是雨天與親子遊玩的絕佳備案。</li>
+          <li><strong>香流亭茶室</strong>：位於日本庭園中，可以體驗傳統的抹茶與日式點心。</li>
+          <li><strong>園內免費接駁車</strong>：公園面積有 200 公頃，設有<strong>「免費巡迴巴士」</strong>，分為黃線與紅線，約 20 分鐘一班，能往返車站、大倉庫與咚咚吭森林。</li>
+        </ul>
+      </div>
+
+      <!-- Card: Ghibli tips -->
+      <div class="tips-card">
+        <h3>📌 吉卜力公園遊玩避坑指南</h3>
+        <ul class="tips-card-list warning">
+          <li><strong>搶票時間（極重要）</strong>：門票於<strong>出發前2個月的10號下午2:00（日本時間）</strong>開賣，大散步券高級版（Premium）通常在 10 分鐘內完售。</li>
+          <li><strong>海外購票方案</strong>：若官網搶不到，可以去 <strong>Klook</strong> 或 <strong>KKday</strong> 上尋找一日遊套票或含門票的飯店套裝行程，雖然總價較高，但通常會有保障名額。</li>
+          <li><strong>實名制與證件</strong>：門票上印有購票者姓名，入場時有機會抽驗。海外旅客請務必隨身攜帶<strong>護照正本</strong>供查驗。</li>
+          <li><strong>寄物櫃資訊</strong>：大倉庫與各展區內部不能帶行李箱進入。建議將大行李寄放在<strong>「Linimo 車站」的寄物櫃</strong>，或<strong>「北口問訊處」旁的行李房</strong>。</li>
+          <li><strong>餐飲安排建議</strong>：吉卜力園區內（如大倉庫牛奶攤、魔女之谷餐廳）排隊時間非常長。建議可以在莫里科羅公園的「北口餐飲區（有吉卜力風格餐車與拉麵店）」或「羅森超商」先買好食物，在大草坪或公共區域長椅享用。</li>
+          <li><strong>APM 貓巴士</strong>：來往「魔法之里」與「咚咚吭森林」之間，單程票價成人 ¥1,000，兒童 ¥500，車票在自動售票機購買，非常熱門。</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 吉卜力公園與莫里科羅公園繁體中文非官方指南手冊 | 本網站由 AI 配對工程師 Antigravity 友情開發</p>
+    <p class="disclaimer">免責聲明：本網站內容係根據吉卜力公園 (Ghibli Park) 與愛・地球博紀念公園 (Aichi Expo Memorial Park) 官方網站公開資料整理，票價、規則與運作方式可能隨官方調整而變動，出發前請務必參閱 <a href="https://ghibli-park.jp/" target="_blank" rel="noopener">吉卜力公園官網</a> 取得最新資訊。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
