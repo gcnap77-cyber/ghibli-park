@@ -888,8 +888,11 @@ footer .disclaimer {
   
   .map-svg {
     width: 675px;
+    min-width: 675px;
     height: 380px;
+    min-height: 380px;
     flex-shrink: 0;
+    display: block;
   }
   
   .tips-section {
