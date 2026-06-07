@@ -204,11 +204,11 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       // Update purchase links for Overseas
-      if (premiumOfficial) premiumOfficial.style.display = 'none'; // Lawson does not sell Premium overseas
-      if (premiumKlook) {
-        premiumKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
-        premiumKlook.style.display = 'inline-flex';
+      if (premiumOfficial) {
+        premiumOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
+        premiumOfficial.style.display = 'inline-flex';
       }
+      if (premiumKlook) premiumKlook.style.display = 'none'; // Klook does not sell Premium
       if (standardOfficial) {
         standardOfficial.setAttribute('href', 'https://l-tike.com/st1/ghibli-pk-en4');
         standardOfficial.style.display = 'inline-flex';
