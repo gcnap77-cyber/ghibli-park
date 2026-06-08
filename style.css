@@ -1399,3 +1399,58 @@ footer .disclaimer {
     height: 44px;
   }
 }
+
+/* Floating Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: var(--glass-blur);
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+  opacity: 0; /* Hidden by default */
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+
+.back-to-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: #ffffff;
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.back-to-top-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover .back-to-top-icon {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for back to top button */
+@media (max-width: 768px) {
+  .back-to-top-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+  }
+}

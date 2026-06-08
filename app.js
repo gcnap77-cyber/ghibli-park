@@ -371,4 +371,24 @@ document.addEventListener('DOMContentLoaded', () => {
   drawerLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
   });
+
+  // 9. Back to Top Button visibility and click logic
+  const backToTopBtn = document.getElementById('back-to-top-btn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      if (backToTopBtn) backToTopBtn.classList.add('show');
+    } else {
+      if (backToTopBtn) backToTopBtn.classList.remove('show');
+    }
+  });
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
 });
