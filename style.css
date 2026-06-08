@@ -681,29 +681,50 @@ a:hover {
   content: '🎬';
 }
 
-.area-title-group h3 {
+.area-title {
   font-size: 1.8rem;
   margin-top: 0.2rem;
-}
-
-.area-title-group h3 a {
-  color: var(--primary);
-  display: inline-flex;
+  display: flex;
   align-items: baseline;
   gap: 0.6rem;
-  transition: var(--transition-fast);
 }
 
-.area-title-group h3 a:hover {
-  color: var(--accent-blue);
-  text-decoration: underline;
-}
-
-.area-title-group h3 span.jp {
+.area-title span.jp {
   font-size: 0.95rem;
   font-weight: 400;
   color: var(--text-muted);
 }
+
+.area-link-block {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Color Coding for 5 Areas */
+/* 1. 吉卜力大倉庫: 橘色 (配合橘色圖示) */
+.title-warehouse { color: #d85c00 !important; }
+.area-btn-warehouse { background-color: #d85c00 !important; }
+.area-btn-warehouse:hover { background-color: #b24c00 !important; }
+
+/* 2. 青春之丘: 水藍色 (配合水藍色圖示) */
+.title-youth { color: #0077b6 !important; }
+.area-btn-youth { background-color: #0077b6 !important; }
+.area-btn-youth:hover { background-color: #005f92 !important; }
+
+/* 3. 動動力森林: 森林綠 (配合綠色圖示) */
+.title-dondoko { color: #277443 !important; }
+.area-btn-dondoko { background-color: #277443 !important; }
+.area-btn-dondoko:hover { background-color: #1e5a33 !important; }
+
+/* 4. 魔法之里: 紫色 (配合紫色圖示) */
+.title-mononoke { color: #7d409b !important; }
+.area-btn-mononoke { background-color: #7d409b !important; }
+.area-btn-mononoke:hover { background-color: #64337c !important; }
+
+/* 5. 魔女之谷: 桃紅色 (配合桃紅色圖示) */
+.title-witches { color: #d81b60 !important; }
+.area-btn-witches { background-color: #d81b60 !important; }
+.area-btn-witches:hover { background-color: #b0154e !important; }
 
 .area-illustrate-box {
   background: #fdfbf7;

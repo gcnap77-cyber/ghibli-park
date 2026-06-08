@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.6](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.6.txt)** (最新版本)
+- **[v1.0.7](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.7.txt)** (最新版本)
+  - *重構園區介紹大標題連結排版，將官方連結移至標題下方，並修正大標題與按鈕的顏色，使其與該區的圖示顏色相同（橘、水藍、森林綠、紫、桃紅），快取升級 v=7。*
+- **[v1.0.6](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.6.txt)**
   - *重構購票按鈕排版，將「官網購票 ↗」與「Klook ↗」按鈕統一移到卡片標題正下方，修復電腦版排版不對稱的感覺，快取升級 v=6。*
 - **[v1.0.5](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.5.txt)**
   - *更正購票按鈕顯示邏輯：經確認 Lawson 英文官網有賣高級票，但 Klook 沒有；修改為海外模式下高級票顯示官網連結並隱藏 Klook，更新正確連結，快取升級 v=5。*
