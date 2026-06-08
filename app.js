@@ -301,8 +301,14 @@ document.addEventListener('DOMContentLoaded', () => {
             statusBox.classList.add('status-theme-satoyama');
           } else if (ticketType === 'witches-mononoke') {
             statusBox.classList.add('status-theme-witches-mononoke');
+          } else if (ticketType === 'warehouse-only') {
+            statusBox.classList.add('status-theme-warehouse-only');
+          } else if (ticketType === 'youth-only') {
+            statusBox.classList.add('status-theme-youth-only');
+          } else if (ticketType === 'dondoko-only') {
+            statusBox.classList.add('status-theme-dondoko-only');
           } else {
-            // warehouse-only, youth-only, dondoko-only
+            // fallback
             statusBox.classList.add('status-theme-single-area');
           }
         }

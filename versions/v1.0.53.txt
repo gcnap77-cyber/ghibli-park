@@ -1,0 +1,26 @@
+===================================================================
+版本號：v1.0.53
+發布日期：2026-06-09
+發布者：Antigravity
+修正目標：修補 JavaScript 狀態過濾映射缺陷。在 `app.js` 的 `updateTicketFilter` 邏輯中，將大倉庫單獨券、青春之丘單獨券、動動力森林單獨券對應的狀態框樣式，改為與 `style.css` 新定義的專屬狀態配色類別（status-theme-warehouse-only、status-theme-youth-only、status-theme-dondoko-only）連結，解決其顯示不一致之 Bug。
+===================================================================
+
+【變更檔案列表】
+- app.js
+- index.html
+- versions/CHANGELOG.md
+
+【詳細改動內容說明】
+1. JavaScript 映射邏輯修補（JS）：
+   - 在 `app.js` 的 `updateTicketFilter(ticketType)` 中，原先並未將單獨園區票指派給具體的園區狀態配色類別，而是統一落入 `else` 退回至共用的橘色（`status-theme-single-area`）。
+   - 本次修正加載了對應的細分映射：
+     - 若 `ticketType` 為 `warehouse-only` ➡️ 動態指定 `.status-theme-warehouse-only`。
+     - 若 `ticketType` 為 `youth-only` ➡️ 動態指定 `.status-theme-youth-only`。
+     - 若 `ticketType` 為 `dondoko-only` ➡️ 動態指定 `.status-theme-dondoko-only`。
+   - 這完美解決了使用者點選單獨園區票時，詳情卡片狀態框未能正常顯示專屬色彩（例如點選青春之丘顯示藍色，點選動動力森林顯示亮綠色）的 Bug。
+
+2. 版本保護與快取清理（HTML）：
+   - 將 `index.html` 中的 `style.css` 與 `app.js` 引用戳記提升至 `v=53`。
+   - 修改側邊欄選單底部的版本編號至 `v1.0.53`。
+
+===================================================================
