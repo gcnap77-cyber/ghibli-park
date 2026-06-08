@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.48](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.48.txt)** (最新版本)
+- **[v1.0.49](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.49.txt)** (最新版本)
+  - *重構展區狀態框的色彩與票券主題聯動邏輯：可進入/部分進入園區之狀態框色彩將動態與所選票卡代表色系同步，禁止進入則維持紅色，提升畫面精緻度與易讀性，快取戳記改為 v=49。*
+- **[v1.0.48](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.48.txt)**
   - *將部分授權狀態（status-partial）的前置燈號圖示改為橘色圓圈 🟠，以適配優化後的琥珀橙主題，快取戳記改為 v=48。*
 - **[v1.0.47](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.47.txt)**
   - *修正部分限入狀態顏色（status-partial）為琥珀橙，避免與高級版金色徽章撞色混淆，快取戳記改為 v=47。*

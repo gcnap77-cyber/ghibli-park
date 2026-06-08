@@ -1,0 +1,32 @@
+===================================================================
+版本號：v1.0.49
+發布日期：2026-06-09
+發布者：Antigravity
+修正目標：重構展區狀態框的色彩與票券主題聯動邏輯。將所有「可進入（status-allowed）」及「部分進入（status-partial）」狀態提示框底色、文字、邊框，動態調整為與當下所選取的票券卡片徽章（Badge）相同的色系，而「禁止進入（status-blocked）」則維持醒目的警示紅，以達成高階視覺引導效果。
+===================================================================
+
+【變更檔案列表】
+- style.css
+- app.js
+- index.html
+- versions/CHANGELOG.md
+
+【詳細改動內容說明】
+1. 主題配色擴充（CSS）：
+   - 在 `style.css` 中，新增五款與購票卡片代表色系完全一致的狀態樣式類別：
+     - `.status-theme-premium`：金色主題底色及文字（高級版）
+     - `.status-theme-standard`：藍色主題底色及文字（標準版）
+     - `.status-theme-satoyama`：深綠色主題底色及文字（里山券）
+     - `.status-theme-witches-mononoke`：紫色主題底色及文字（魔女與魔法套票）
+     - `.status-theme-single-area`：暖橙色主題底色及文字（三款單獨園區券）
+
+2. 動態主題綁定邏輯（JS）：
+   - 重構 `app.js` 的 `updateTicketFilter(ticketType)` 中，對展區細節卡片狀態框的類別指派邏輯：
+     - 若狀態為 `status-blocked`，維持指派紅色的 `.status-blocked` 樣式。
+     - 若狀態為 `status-allowed` 或 `status-partial`（代表目前票券有進入權限），則根據目前所選取的 `ticketType` 動態加上對應的 `.status-theme-[type]` 主題色彩類別。
+
+3. 版本保護與快取清理（HTML）：
+   - 將 `index.html` 中的 `style.css` 與 `app.js` 引用戳記提升至 `v=49`。
+   - 修改側邊欄選單底部的版本編號至 `v1.0.49`。
+
+===================================================================

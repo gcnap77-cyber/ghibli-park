@@ -287,7 +287,26 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Add new class and text based on active ticket
         const info = activeData[ticketType][areaName];
-        statusBox.classList.add(info.status);
+        
+        // Apply ticket-specific theme color for allowed/partial entries
+        if (info.status === 'status-blocked') {
+          statusBox.classList.add('status-blocked');
+        } else {
+          // Status is allowed or partial - match selected ticket's badge color
+          if (ticketType === 'premium') {
+            statusBox.classList.add('status-theme-premium');
+          } else if (ticketType === 'standard') {
+            statusBox.classList.add('status-theme-standard');
+          } else if (ticketType === 'satoyama') {
+            statusBox.classList.add('status-theme-satoyama');
+          } else if (ticketType === 'witches-mononoke') {
+            statusBox.classList.add('status-theme-witches-mononoke');
+          } else {
+            // warehouse-only, youth-only, dondoko-only
+            statusBox.classList.add('status-theme-single-area');
+          }
+        }
+        
         statusBox.querySelector('span').textContent = info.text;
       }
     });

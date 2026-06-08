@@ -918,6 +918,37 @@ a:hover {
   border: 1px solid rgba(214, 48, 49, 0.15);
 }
 
+/* Ticket Theme-specific Status Boxes */
+.status-theme-premium {
+  background-color: rgba(212, 175, 55, 0.08);
+  color: #b08d13;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.status-theme-standard {
+  background-color: rgba(74, 144, 226, 0.08);
+  color: var(--accent-blue);
+  border: 1px solid rgba(74, 144, 226, 0.15);
+}
+
+.status-theme-satoyama {
+  background-color: rgba(45, 90, 39, 0.08);
+  color: var(--primary);
+  border: 1px solid rgba(45, 90, 39, 0.15);
+}
+
+.status-theme-witches-mononoke {
+  background-color: rgba(142, 68, 173, 0.08);
+  color: #8e44ad;
+  border: 1px solid rgba(142, 68, 173, 0.15);
+}
+
+.status-theme-single-area {
+  background-color: rgba(230, 126, 34, 0.08);
+  color: #d35400;
+  border: 1px solid rgba(230, 126, 34, 0.15);
+}
+
 /* Card Content Column */
 .area-content {
   display: flex;
