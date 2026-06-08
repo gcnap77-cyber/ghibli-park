@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>吉卜力公園 x 莫里科羅公園 購票導覽手冊 | Ghibli Park Guide</title>
   <meta name="description" content="最容易理解的吉卜力公園繁體中文購票導覽！結合愛・地球博紀念公園（莫里科羅公園）交通指南，解析 2026 年最新門票種類（大散步券高級版、標準版、里山散步券）差別，提供互動式地圖，助您規劃完美吉卜力之旅。">
-  <link rel="stylesheet" href="style.css?v=45">
+  <link rel="stylesheet" href="style.css?v=46">
 </head>
 <body>
 
@@ -37,7 +37,7 @@
       </ul>
     </nav>
     <div class="drawer-footer">
-      <p>非官方購票導覽手冊 • v1.0.45</p>
+      <p>非官方購票導覽手冊 • v1.0.46</p>
     </div>
   </div>
 
@@ -158,13 +158,7 @@
         </div>
 
         <!-- Ticket Card 3: Satoyama -->
-        <div class="ticket-card" data-ticket="satoyama" id="btn-satoyama">
-          <!-- Domestic Lock Overlay -->
-          <div class="domestic-only-overlay show" id="satoyama-overlay">
-            <div class="overlay-lock-icon">🔒</div>
-            <div class="overlay-title">僅限日本國內購買</div>
-            <div class="overlay-desc">Lawson 英文官網與 Klook 無販售此票種，需日本手機號碼與簡訊驗證才可購買</div>
-          </div>
+        <div class="ticket-card domestic-only-card" data-ticket="satoyama" id="btn-satoyama">
           <span class="ticket-badge satoyama">2026年7月新設</span>
           <h3>里山散步券</h3>
           <div class="purchase-links-block">
@@ -180,6 +174,75 @@
             <li class="unavailable">不可進入建築物內部</li>
             <li style="color: var(--accent-gold); font-weight: 700; font-size: 0.82rem;">💡 可於「魔女之谷」現場加購當日券入內</li>
             <li>適合：以散步、購買周邊、用餐為主的遊客</li>
+          </ul>
+        </div>
+
+        <!-- Ticket Card 4: Witches & Mononoke -->
+        <div class="ticket-card domestic-only-card" data-ticket="witches-mononoke" id="btn-witches-mononoke">
+          <span class="ticket-badge witches-mononoke">魔女&魔法</span>
+          <h3>魔女與魔法套票</h3>
+          <div class="purchase-links-block">
+            <a href="https://l-tike.com/bw-ticket/ghibli/ghibli-park/" target="_blank" rel="noopener" class="buy-link-btn" id="witches-mononoke-official-link">官網購票 ↗</a>
+          </div>
+          <p class="price">¥3,300<span class="twd-price" data-jpy="3300"></span> <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥3,800<span class="twd-price" data-jpy="3800"></span> <span>假日 / 成人</span></p>
+          <ul class="ticket-features">
+            <li>可參觀 2 大園區</li>
+            <li>魔女之谷、魔法之里</li>
+            <li style="color: var(--accent-green); font-weight: 700;">可進入魔女之谷 3 棟建築內部</li>
+            <li class="unavailable">不含大倉庫、青春之丘、動動力森林</li>
+            <li>適合：想專攻魔女之谷與魔法之里的遊客</li>
+          </ul>
+        </div>
+
+        <!-- Ticket Card 5: Warehouse Only -->
+        <div class="ticket-card domestic-only-card" data-ticket="warehouse-only" id="btn-warehouse-only">
+          <span class="ticket-badge single-area">單獨園區</span>
+          <h3>吉卜力大倉庫單獨券</h3>
+          <div class="purchase-links-block">
+            <a href="https://l-tike.com/bw-ticket/ghibli/ghibli-park/" target="_blank" rel="noopener" class="buy-link-btn" id="warehouse-only-official-link">官網購票 ↗</a>
+          </div>
+          <p class="price">¥2,000<span class="twd-price" data-jpy="2000"></span> <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥2,500<span class="twd-price" data-jpy="2500"></span> <span>假日 / 成人</span></p>
+          <ul class="ticket-features">
+            <li>僅限進入「吉卜力大倉庫」</li>
+            <li class="unavailable">不含其他 4 個園區</li>
+            <li style="color: var(--accent-red); font-weight: 700;">需指定入場時段</li>
+            <li>適合：只想看大倉庫室內展覽的遊客</li>
+          </ul>
+        </div>
+
+        <!-- Ticket Card 6: Youth Only -->
+        <div class="ticket-card domestic-only-card" data-ticket="youth-only" id="btn-youth-only">
+          <span class="ticket-badge single-area">單獨園區</span>
+          <h3>青春之丘單獨券</h3>
+          <div class="purchase-links-block">
+            <a href="https://l-tike.com/bw-ticket/ghibli/ghibli-park/" target="_blank" rel="noopener" class="buy-link-btn" id="youth-only-official-link">官網購票 ↗</a>
+          </div>
+          <p class="price">¥1,000<span class="twd-price" data-jpy="1000"></span> <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥1,500<span class="twd-price" data-jpy="1500"></span> <span>假日 / 成人</span></p>
+          <ul class="ticket-features">
+            <li>僅限進入「青春之丘」</li>
+            <li style="color: var(--accent-green); font-weight: 700;">可進入地球屋古董店內部</li>
+            <li class="unavailable">不含其他 4 個園區</li>
+            <li>適合：只想參觀青春之丘地球屋的遊客</li>
+          </ul>
+        </div>
+
+        <!-- Ticket Card 7: Dondoko Only -->
+        <div class="ticket-card domestic-only-card" data-ticket="dondoko-only" id="btn-dondoko-only">
+          <span class="ticket-badge single-area">單獨園區</span>
+          <h3>動動力森林單獨券</h3>
+          <div class="purchase-links-block">
+            <a href="https://l-tike.com/bw-ticket/ghibli/ghibli-park/" target="_blank" rel="noopener" class="buy-link-btn" id="dondoko-only-official-link">官網購票 ↗</a>
+          </div>
+          <p class="price">¥1,000<span class="twd-price" data-jpy="1000"></span> <span>平日 / 成人</span></p>
+          <p class="price" style="font-size:1.1rem; margin-top:-0.5rem; color:var(--text-muted);">¥1,500<span class="twd-price" data-jpy="1500"></span> <span>假日 / 成人</span></p>
+          <ul class="ticket-features">
+            <li>僅限進入「動動力森林」</li>
+            <li style="color: var(--accent-green); font-weight: 700;">可進入皋月和梅的家內部</li>
+            <li class="unavailable">不含其他 4 個園區</li>
+            <li>適合：只想參觀龍貓草壁家的遊客</li>
           </ul>
         </div>
       </div>
@@ -670,21 +733,34 @@
           <div class="highlights-box">
             <h4>✨ 必看與必玩亮點：</h4>
             <ul class="highlights-list">
-              <li><strong>霍爾的移動城堡</strong>：超大型實體城堡，內部有霍爾的臥室、浴室與火魔卡西法。<strong>（當日券：成人 ¥1,000/兒童 ¥500，需於魔女之谷小屋售票處搶領整理券）</strong></li>
-              <li><strong>歐其諾家</strong>：《魔女宅急便》中琪琪的老家，包含媽媽的藥草調配室與琪琪的房間。<strong>（當日券：成人 ¥400/兒童 ¥200，於魔女之谷小屋現場限量直接購買）</strong></li>
-              <li><strong>魔女之家</strong>：《安雅與魔女》中魔女貝拉·雅加的奇幻工作室。<strong>（當日券：成人 ¥400/兒童 ¥200，於魔女之谷小屋現場限量直接購買）</strong></li>
-              <li><strong>琪琪的麵包店 (Guchokipanya)</strong>：販售美味 of 現烤麵包與劇中同款麵包。</li>
-              <li><strong>旋轉木馬與飛行機器</strong>：以吉卜力飛行器和動物為主題的精美遊樂設施（需現場額外買票）。</li>
-              <li><strong>熱風餐廳 (Hot Tin Roof)</strong>：提供獨特魔女特色簡餐與貓咪肉餡餅。</li>
+              <li><strong>霍爾的移動城堡</strong>：20公尺高實體城堡，每隔一段時間會動且噴氣。<em>(進室內需高級版或當日券)</em></li>
+              <li><strong>歐其諾家</strong>：琪琪老家，有媽媽的藥草調配室與琪琪房間。<em>(進室內需高級版或當日券)</em></li>
+              <li><strong>魔女之家</strong>：《安雅與魔女》貝拉·雅加的奇幻工作室。<em>(進室內需高級版或當日券)</em></li>
+              <li><strong>琪琪的麵包店 (Guchokipanya)</strong>：販售劇中同款及現烤麵包。</li>
+              <li><strong>旋轉木馬與飛行機器</strong>：以吉卜力飛行器和動物為主題的精美遊樂設施（需現場另付費搭乘，單次券 ¥500 - ¥1,000）。</li>
+              <li><strong>熱風餐廳 (Hot Tin Roof)</strong>：提供獨特魔女特色簡餐與熱騰騰的貓咪肉餡餅。</li>
             </ul>
           </div>
 
           <div class="guide-box">
             <h4>💡 攻略與重要限制：</h4>
             <ul class="guide-list">
-              <li class="warn"><strong>2026年最新限制 (霍爾城堡入場)</strong>：自 2026 年 7 月起，若購買含魔女之谷特定設施的門票，<strong>「霍爾的移動城堡」內部觀覽將改為「指定入場時間限制」</strong>以維持參觀品質。</li>
-              <li><strong>標準版<span class="satoyama-text-inline">與里山券</span>限制</strong>：預設無法進入各大主題建築物內部。<strong>（💡 補救方案：持標準版<span class="satoyama-text-inline">/里山券</span>旅客，當天可在「魔女之谷」現場的小屋售票處加購『特別設施當日入場券』進入此三棟建築物。每日限量售完即止。霍爾城堡加購成人 ¥1,000 / 兒童 ¥500，需先於 10:00 (假日 9:00) 或 13:00 搶領整理券；歐其諾之家與魔女之家加購成人 ¥400 / 兒童 ¥200，免整理券可直接購買）</strong></li>
-              <li class="time"><strong>拍照建議</strong>：魔女之谷是網美打卡聖地，特別是傍晚燈光亮起時，城堡與歐洲街景非常有氛圍，建議安排在下午遊玩至閉園（17:00）。</li>
+              <li class="warn"><strong>霍爾城堡內部觀覽新制</strong>：自 2026 年 7 月起，城堡內部觀覽將改為「指定入場時間限制」。</li>
+              <li><strong>特別設施當日券（室內參觀補救方案）</strong>：
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem; line-height: 1.5;">
+                  持<strong>標準版</strong><span class="satoyama-text-inline">或<strong>里山券</strong></span>旅客，可於園內「小屋售票處」限量加購當日券進入上述三棟建築內部。
+                  <strong style="color: var(--accent-red); display: block; margin: 0.2rem 0;">⚠️ 所有當日券皆每日數量限制、先到先得、售完為止！</strong>
+                </div>
+                <ul style="margin-top: 0.3rem; margin-left: 1.2rem; font-size: 0.82rem; list-style-type: circle; color: var(--text-muted); line-height: 1.6;">
+                  <li><strong>霍爾的移動城堡</strong>（成人 ¥1,000 / 兒童 ¥500）：
+                    <br><strong style="color: var(--accent-gold);">需先排隊領取「時間整理券」</strong>：於小屋旁發放（發放時間：平日 10:00 / 假日 9:00 / 下午場 13:00 起）。
+                  </li>
+                  <li style="margin-top: 0.4rem;"><strong>歐其諾家 & 魔女之家</strong>（單棟成人 ¥400 / 兒童 ¥200）：
+                    <br><strong style="color: var(--accent-green);">免整理券，直接排隊限量加購</strong>：自 10:30 (假日 9:30) 起開賣。
+                  </li>
+                </ul>
+              </li>
+              <li class="time"><strong>參觀與拍照建議</strong>：傍晚點燈後的歐風街景極美，推薦安排在下午至閉園（17:00）。</li>
             </ul>
           </div>
         </div>
@@ -848,6 +924,6 @@
     <span class="back-to-top-icon">🏠</span>
   </button>
 
-  <script src="app.js?v=45"></script>
+  <script src="app.js?v=46"></script>
 </body>
 </html>

@@ -71,6 +71,34 @@ document.addEventListener('DOMContentLoaded', () => {
         dondoko: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
         mononoke: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
         witches: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' }
+      },
+      'witches-mononoke': {
+        warehouse: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        youth: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        dondoko: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        mononoke: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        witches: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' }
+      },
+      'warehouse-only': {
+        warehouse: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        youth: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        dondoko: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        mononoke: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        witches: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' }
+      },
+      'youth-only': {
+        warehouse: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        youth: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        dondoko: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        mononoke: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        witches: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' }
+      },
+      'dondoko-only': {
+        warehouse: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        youth: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        dondoko: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        mononoke: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' },
+        witches: { status: 'status-blocked', text: '🔴 【無權限】海外管道無法購買此票種。' }
       }
     },
     domestic: {
@@ -139,6 +167,94 @@ document.addEventListener('DOMContentLoaded', () => {
           status: 'status-partial',
           text: '🟡 【僅限外觀】可進入魔女之谷園區，但【無法進入】霍爾城堡等主題建築內部。'
         }
+      },
+      'witches-mononoke': {
+        warehouse: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此票種【不包含】吉卜力大倉庫。'
+        },
+        youth: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此票種【不包含】青春之丘。'
+        },
+        dondoko: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此票種【不包含】咚咚吭森林。'
+        },
+        mononoke: {
+          status: 'status-allowed',
+          text: '🟢 【可進入】可進入魔法之里，體驗炭烤五平餅與參觀達達拉城外觀。'
+        },
+        witches: {
+          status: 'status-allowed',
+          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。'
+        }
+      },
+      'warehouse-only': {
+        warehouse: {
+          status: 'status-allowed',
+          text: '🟢 【完全授權】可進入參觀大倉庫，包含所有內部展示與影院。'
+        },
+        youth: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含吉卜力大倉庫，不含其餘 4 個園區。'
+        },
+        dondoko: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含吉卜力大倉庫，不含其餘 4 個園區。'
+        },
+        mononoke: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含吉卜力大倉庫，不含其餘 4 個園區。'
+        },
+        witches: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含吉卜力大倉庫，不含其餘 4 個園區。'
+        }
+      },
+      'youth-only': {
+        warehouse: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含青春之丘，不含其餘 4 個園區。'
+        },
+        youth: {
+          status: 'status-allowed',
+          text: '🟢 【完全授權】可進入青春之丘，包含進入「地球屋」古董店室內觀看。'
+        },
+        dondoko: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含青春之丘，不含其餘 4 個園區。'
+        },
+        mononoke: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含青春之丘，不含其餘 4 個園區。'
+        },
+        witches: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含青春之丘，不含其餘 4 個園區。'
+        }
+      },
+      'dondoko-only': {
+        warehouse: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含咚咚吭森林，不含其餘 4 個園區。'
+        },
+        youth: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含咚咚吭森林，不含其餘 4 個園區。'
+        },
+        dondoko: {
+          status: 'status-allowed',
+          text: '🟢 【完全授權】可進入咚咚吭森林，包含進入「皋月和梅的家」室內觀看。'
+        },
+        mononoke: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含咚咚吭森林，不含其餘 4 個園區。'
+        },
+        witches: {
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】此單獨票僅包含咚咚吭森林，不含其餘 4 個園區。'
+        }
       }
     }
   };
@@ -187,12 +303,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const satoyamaOfficial = document.getElementById('satoyama-official-link');
     const satoyamaOnlyElements = document.querySelectorAll('.satoyama-only');
     const satoyamaInlineSpans = document.querySelectorAll('.satoyama-text-inline');
+    const domesticOnlyCards = document.querySelectorAll('.domestic-only-card');
 
     if (isOverseas) {
       toggleOverseas.classList.add('active');
       toggleDomestic.classList.remove('active');
-      satoyamaOverlay.classList.add('show');
+      if (satoyamaOverlay) satoyamaOverlay.classList.add('show');
       
+      // Hide domestic-only cards in ticket selector
+      domesticOnlyCards.forEach(card => card.style.display = 'none');
+
       // Hide satoyama badges in area cards
       areaSatoyamaBadges.forEach(badge => badge.style.display = 'none');
 
@@ -228,17 +348,20 @@ document.addEventListener('DOMContentLoaded', () => {
         satoyamaOfficial.style.display = 'none';
       }
 
-      // If active ticket was satoyama (which is locked), switch to premium
+      // If active ticket was a domestic-only ticket (which is now hidden), switch to premium
       const activeCard = document.querySelector('.ticket-card.active');
-      if (activeCard && activeCard.getAttribute('data-ticket') === 'satoyama') {
-        document.getElementById('btn-satoyama').classList.remove('active');
+      if (activeCard && activeCard.classList.contains('domestic-only-card')) {
+        activeCard.classList.remove('active');
         document.getElementById('btn-premium').classList.add('active');
       }
     } else {
       toggleOverseas.classList.remove('active');
       toggleDomestic.classList.add('active');
-      satoyamaOverlay.classList.remove('show');
+      if (satoyamaOverlay) satoyamaOverlay.classList.remove('show');
       
+      // Show domestic-only cards in ticket selector
+      domesticOnlyCards.forEach(card => card.style.display = 'flex');
+
       // Show satoyama badges in area cards
       areaSatoyamaBadges.forEach(badge => badge.style.display = 'inline-block');
 
@@ -283,8 +406,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Ticket Selector click handler
   ticketCards.forEach(card => {
     card.addEventListener('click', () => {
-      // If overseas view and clicking locked satoyama, do nothing
-      if (isOverseas && card.getAttribute('data-ticket') === 'satoyama') return;
+      // If overseas view and clicking domestic-only card, do nothing
+      if (isOverseas && card.classList.contains('domestic-only-card')) return;
 
       // Remove active class from all buttons
       ticketCards.forEach(c => c.classList.remove('active'));
