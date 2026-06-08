@@ -1,0 +1,26 @@
+===================================================================
+版本號：v1.0.17
+發布日期：2026-06-08
+修正目標：進行互動地圖區域替換實驗，將「魔法之里」園區的原始 SVG 幾何四邊形選取範圍、圖示及文字標籤，替換為使用者提供的高精細去背圖檔，並加入專屬 CSS 濾鏡過渡與快取戳記 (?v=17)
+===================================================================
+
+【變更檔案列表】
+- index.html
+- style.css
+- images/areas_mononoke_custom.png (新增)
+
+【詳細改動內容說明】
+1. 替換「魔法之里」為自訂圖片：
+   - 將使用者上傳之去背 PNG 圖片複製至專案圖片目錄 `images/areas_mononoke_custom.png`。
+   - 在 index.html 中，移除原先位於 `<g class="map-area-group" id="map-mononoke">` 內的 `<polygon>`、`<g class="map-icon">` 和 `<text class="map-text">`，改為使用單個 `<image>` 元素直接載入自訂圖片，並在 SVG 視窗中對齊至 `x="525" y="92" width="140" height="98"`。
+
+2. 為自訂圖片建立精確的 CSS 過渡與狀態特效：
+   - 於 style.css 移除原先對 `#map-mononoke .map-area-polygon` 的樣式。
+   - 新增針對 `#map-mononoke .map-area-image-custom` 的樣式規則，加入預設的紫色 drop-shadow 陰影與平滑 transition。
+   - 為 hover 和 active 狀態配置加深的紫色陰影、略微提升亮度 (brightness) 與對比 (contrast)，並以 `translateY(-3px)` 提供輕微浮起效果，打造優質的微互動質感。
+   - 當票種不包含「魔法之里」時，外部 `.map-area-group.disabled` 的 opacity (0.25) 及 `pointer-events: none` 將自動完美套用到圖片上。
+
+3. 升級資源快取更新戳記：
+   - 將 index.html 中的樣式與腳本連結戳記升級至 `?v=17`，以強制瀏覽器更新快取。
+
+===================================================================
