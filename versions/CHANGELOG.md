@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.40](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.40.txt)** (最新版本)
+- **[v1.0.41](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.41.txt)** (最新版本)
+  - *徹底移除搶票提醒看板中的「註冊會員」相關敘述，使語句最簡潔，快取戳記改為 v=41。*
+- **[v1.0.40](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.40.txt)**
   - *修正 8 月搶票提醒看板中的文字，移除海外遊客買票需註冊會員之敘述（改為提醒無須註冊），快取戳記改為 v=40。*
 - **[v1.0.39](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.39.txt)**
   - *在左上角側邊欄選單（Drawer）中新增「遊玩與避坑指南」跳轉項目，設定對應 ID 與 2rem 頂端捲動邊距，快取戳記為 v=39。*
