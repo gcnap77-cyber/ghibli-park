@@ -537,8 +537,10 @@ a:hover {
 }
 
 .map-area-group.disabled .map-area-polygon {
-  fill: #dcdde1;
-  stroke: #7f8c8d;
+  fill: #dcdde1 !important;
+  stroke: #7f8c8d !important;
+  stroke-dasharray: 4 4 !important;
+  filter: none !important;
 }
 
 .map-text {
@@ -591,13 +593,83 @@ a:hover {
 }
 
 .legend-color.public {
-  background-color: #f5f2e9;
-  border: 1px solid #e3decb;
+  background-color: #eef7ee;
+  border: 1.5px dashed #a5d6a7;
 }
 
 .legend-color.ghibli {
-  background-color: rgba(45, 90, 39, 0.15);
-  border: 1.5px dashed var(--primary);
+  background-color: rgba(45, 90, 39, 0.08);
+  border: 1.5px solid var(--primary);
+}
+
+/* Moricoro Park outer boundary forest shape */
+.park-boundary-shape {
+  fill: #eef7ee;          /* Soft light forest green background */
+  stroke: #a5d6a7;        /* Soft green dashed border */
+  stroke-width: 2.5;
+  stroke-dasharray: 8 4;  /* Dashed style representing the park boundary */
+  opacity: 0.85;
+}
+
+/* Custom color styles for each Ghibli area on the SVG map */
+/* 1. 吉卜力大倉庫 (橘色) */
+#map-warehouse .map-area-polygon {
+  stroke: #d85c00;
+  stroke-dasharray: none;
+  fill: rgba(216, 92, 0, 0.08);
+}
+#map-warehouse:hover .map-area-polygon,
+#map-warehouse.active .map-area-polygon {
+  fill: rgba(216, 92, 0, 0.25);
+  filter: drop-shadow(0 2px 8px rgba(216,92,0,0.4));
+}
+
+/* 2. 青春之丘 (水藍色) */
+#map-youth .map-area-polygon {
+  stroke: #0077b6;
+  stroke-dasharray: none;
+  fill: rgba(0, 119, 182, 0.08);
+}
+#map-youth:hover .map-area-polygon,
+#map-youth.active .map-area-polygon {
+  fill: rgba(0, 119, 182, 0.25);
+  filter: drop-shadow(0 2px 8px rgba(0,119,182,0.4));
+}
+
+/* 3. 動動力森林 (綠色) */
+#map-dondoko .map-area-polygon {
+  stroke: #277443;
+  stroke-dasharray: none;
+  fill: rgba(39, 116, 67, 0.08);
+}
+#map-dondoko:hover .map-area-polygon,
+#map-dondoko.active .map-area-polygon {
+  fill: rgba(39, 116, 67, 0.25);
+  filter: drop-shadow(0 2px 8px rgba(39,116,67,0.4));
+}
+
+/* 4. 魔法之里 (紫色) */
+#map-mononoke .map-area-polygon {
+  stroke: #7d409b;
+  stroke-dasharray: none;
+  fill: rgba(125, 64, 155, 0.08);
+}
+#map-mononoke:hover .map-area-polygon,
+#map-mononoke.active .map-area-polygon {
+  fill: rgba(125, 64, 155, 0.25);
+  filter: drop-shadow(0 2px 8px rgba(125,64,155,0.4));
+}
+
+/* 5. 魔女之谷 (桃紅色) */
+#map-witches .map-area-polygon {
+  stroke: #d81b60;
+  stroke-dasharray: none;
+  fill: rgba(216, 27, 96, 0.08);
+}
+#map-witches:hover .map-area-polygon,
+#map-witches.active .map-area-polygon {
+  fill: rgba(216, 27, 96, 0.25);
+  filter: drop-shadow(0 2px 8px rgba(216,27,96,0.4));
 }
 
 .legend-color.road {

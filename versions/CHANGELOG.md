@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.15](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.15.txt)** (最新版本)
+- **[v1.0.16](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.16.txt)** (最新版本)
+  - *於地圖畫出愛・地球博紀念公園範圍（綠色虛線）與吉卜力公園 5 大園區範圍（實線彩色），並更新圖例與快取戳記 v=16。*
+- **[v1.0.15](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.15.txt)**
   - *精簡與統整底部主要連結（僅保留吉卜力官網、莫里科羅公園官網與官方購票資訊頁面），並將側邊選單底部改為內部跳轉至該區塊，快取升級 v=15。*
 - **[v1.0.14](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.14.txt)**
   - *於側欄導覽選單「吉卜力官網」下方新增直達「愛・地球博紀念公園 (莫里科羅公園) 官網」外部連結項目，快取升級 v=14。*

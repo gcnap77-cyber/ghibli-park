@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>吉卜力公園 x 莫里科羅公園 購票導覽手冊 | Ghibli Park Guide</title>
   <meta name="description" content="最容易理解的吉卜力公園繁體中文購票導覽！結合愛・地球博紀念公園（莫里科羅公園）交通指南，解析 2026 年最新門票種類（大散步券高級版、標準版、里山散步券）差別，提供互動式地圖，助您規劃完美吉卜力之旅。">
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
 
@@ -188,6 +188,9 @@
           <!-- Main background representing Moricoro Park -->
           <rect class="map-bg-path" width="800" height="450" rx="16" />
           
+          <!-- Park Boundary of Aichi Expo Memorial Park (Moricoro Park) -->
+          <path class="park-boundary-shape" d="M 380 30 C 220 30, 150 150, 150 250 C 150 350, 200 400, 350 420 C 500 440, 700 410, 730 320 C 760 230, 700 100, 550 80 C 450 70, 420 30, 380 30 Z" />
+          
           <!-- Public pathways inside Moricoro Park -->
           <!-- Main Entrance Path -->
           <path class="map-road" d="M 400 40 L 400 120 L 400 200 L 430 220 L 510 200" />
@@ -332,11 +335,11 @@
       <div class="map-legend">
         <div class="legend-item">
           <div class="legend-color public"></div>
-          <span>免費公共公園區</span>
+          <span>愛・地球博紀念公園範圍 (綠色虛線)</span>
         </div>
         <div class="legend-item">
           <div class="legend-color ghibli"></div>
-          <span>吉卜力收費園區</span>
+          <span>吉卜力公園各園區 (實線彩色)</span>
         </div>
         <div class="legend-item">
           <div class="legend-color road"></div>
@@ -762,6 +765,6 @@
     <span class="back-to-top-icon">🏠</span>
   </button>
 
-  <script src="app.js?v=15"></script>
+  <script src="app.js?v=16"></script>
 </body>
 </html>
