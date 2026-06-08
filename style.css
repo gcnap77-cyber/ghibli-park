@@ -486,12 +486,20 @@ a:hover {
   stroke-linecap: round;
 }
 
-.map-shuttle-route {
+.map-bus-east-route {
   fill: none;
   stroke: var(--accent-blue);
   stroke-width: 2.5;
   stroke-dasharray: 6 6;
-  opacity: 0.4;
+  opacity: 0.55;
+}
+
+.map-bus-west-route {
+  fill: none;
+  stroke: #e74c3c;
+  stroke-width: 2.5;
+  stroke-dasharray: 6 6;
+  opacity: 0.55;
 }
 
 .map-catbus-route {
@@ -690,9 +698,15 @@ a:hover {
   border-radius: 0;
 }
 
-.legend-color.bus {
+.legend-color.bus-east {
   height: 4px;
   background-color: var(--accent-blue);
+  border-radius: 0;
+}
+
+.legend-color.bus-west {
+  height: 4px;
+  background-color: #e74c3c;
   border-radius: 0;
 }
 
