@@ -636,16 +636,15 @@ a:hover {
   filter: drop-shadow(0 2px 8px rgba(0,119,182,0.4));
 }
 
-/* 3. 動動力森林 (綠色) */
-#map-dondoko .map-area-polygon {
-  stroke: #277443;
-  stroke-dasharray: none;
-  fill: rgba(39, 116, 67, 0.08);
+/* 3. 動動力森林 (綠色 - 自訂圖片版) */
+#map-dondoko .map-area-image-custom {
+  transition: var(--transition-normal);
+  filter: drop-shadow(0 2px 4px rgba(39, 116, 67, 0.3));
 }
-#map-dondoko:hover .map-area-polygon,
-#map-dondoko.active .map-area-polygon {
-  fill: rgba(39, 116, 67, 0.25);
-  filter: drop-shadow(0 2px 8px rgba(39,116,67,0.4));
+#map-dondoko:hover .map-area-image-custom,
+#map-dondoko.active .map-area-image-custom {
+  filter: drop-shadow(0 4px 12px rgba(39, 116, 67, 0.7)) brightness(1.08) contrast(1.05);
+  transform: translateY(-3px);
 }
 
 /* 4. 魔法之里 (紫色 - 自訂圖片版) */
