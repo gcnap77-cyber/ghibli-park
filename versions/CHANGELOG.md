@@ -5,7 +5,11 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.43](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.43.txt)** (最新版本)
+- **[v1.0.45](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.45.txt)** (最新版本)
+  - *修正互動地圖兩側 Linimo 車站的方向標示，分別改為「往名古屋方向」與「往八草方向」，快取戳記改為 v=45。*
+- **[v1.0.44](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.44.txt)**
+  - *修正互動地圖上 Linimo 路線左側相鄰車站名稱為正確的「公園西站」，快取戳記改為 v=44。*
+- **[v1.0.43](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.43.txt)**
   - *修正大散步券標準版參觀範圍（限制 3 大園區）與修正日本居民版里山散步券票價（平日 ¥1000/假日 ¥1500），更新快取戳記為 v=43。*
 - **[v1.0.42](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.42.txt)**
   - *從側邊欄選單（Drawer）中移除「2026 票種攻略」跳轉選項，精簡選單，快取戳記改為 v=42。*
