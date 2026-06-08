@@ -612,16 +612,15 @@ a:hover {
 }
 
 /* Custom color styles for each Ghibli area on the SVG map */
-/* 1. 吉卜力大倉庫 (橘色) */
-#map-warehouse .map-area-polygon {
-  stroke: #d85c00;
-  stroke-dasharray: none;
-  fill: rgba(216, 92, 0, 0.08);
+/* 1. 吉卜力大倉庫 (橘色 - 自訂圖片版) */
+#map-warehouse .map-area-image-custom {
+  transition: var(--transition-normal);
+  filter: drop-shadow(0 2px 4px rgba(216, 92, 0, 0.3));
 }
-#map-warehouse:hover .map-area-polygon,
-#map-warehouse.active .map-area-polygon {
-  fill: rgba(216, 92, 0, 0.25);
-  filter: drop-shadow(0 2px 8px rgba(216,92,0,0.4));
+#map-warehouse:hover .map-area-image-custom,
+#map-warehouse.active .map-area-image-custom {
+  filter: drop-shadow(0 4px 12px rgba(216, 92, 0, 0.7)) brightness(1.08) contrast(1.05);
+  transform: translateY(-3px);
 }
 
 /* 2. 青春之丘 (水藍色 - 自訂圖片版) */
