@@ -217,6 +217,9 @@ document.addEventListener('DOMContentLoaded', () => {
         standardKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
         standardKlook.style.display = 'inline-flex';
       }
+      if (satoyamaOfficial) {
+        satoyamaOfficial.style.display = 'none';
+      }
 
       // If active ticket was satoyama (which is locked), switch to premium
       const activeCard = document.querySelector('.ticket-card.active');
