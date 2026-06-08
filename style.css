@@ -734,6 +734,7 @@ a:hover {
   gap: 2.5rem;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 2rem;
 }
 
 .area-card:hover {

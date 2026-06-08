@@ -310,8 +310,12 @@ document.addEventListener('DOMContentLoaded', () => {
         mapAreas.forEach(a => a.classList.remove('active'));
         area.classList.add('active');
         
-        // Scroll to card smoothly
-        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Scroll to card smoothly (align to start for mobile to prevent title cutoff, center for desktop)
+        const isMobile = window.innerWidth <= 768;
+        targetCard.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: isMobile ? 'start' : 'center' 
+        });
         
         // Add flash highlight animation
         targetCard.classList.remove('highlight-flash');

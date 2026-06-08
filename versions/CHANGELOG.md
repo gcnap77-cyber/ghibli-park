@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.37](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.37.txt)** (最新版本)
+- **[v1.0.38](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.38.txt)** (最新版本)
+  - *修復手機版點選地圖跳轉時，目標卡片捲動位置過度偏上（標題跑至螢幕外被裁切）的問題，於手機版改用靠頂對齊並新增 2rem 頂端邊距，快取戳記為 v=38。*
+- **[v1.0.37](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.37.txt)**
   - *針對海外旅客模式，動態隱藏所有「里山券」或「里山散步券」的文字說明與列表項目，更新快取戳記為 v=37。*
 - **[v1.0.36](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.36.txt)**
   - *移除「特別設施當日入場券」加購價格旁的台幣匯率換算，簡化排版，防止畫面過於雜亂，更新快取戳記為 v=36。*
