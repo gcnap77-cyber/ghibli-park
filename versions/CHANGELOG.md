@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.13](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.13.txt)** (最新版本)
+- **[v1.0.14](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.14.txt)** (最新版本)
+  - *於側欄導覽選單「吉卜力官網」下方新增直達「愛・地球博紀念公園 (莫里科羅公園) 官網」外部連結項目，快取升級 v=14。*
+- **[v1.0.13](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.13.txt)**
   - *於側欄導覽選單的最下方新增直達吉卜力公園官網的外部連結項目，並提供視覺分隔與高亮，快取升級 v=13。*
 - **[v1.0.12](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.12.txt)**
   - *於網頁最下方新增「常用官方與購票網站連結」區塊，整合精簡主頁面網址，快取升級 v=12。*
