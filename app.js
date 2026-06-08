@@ -391,4 +391,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 10. Center horizontal scroll of SVG map container on page load for mobile
+  const mapContainer = document.querySelector('.map-container');
+  if (mapContainer) {
+    const centerScroll = () => {
+      const scrollAmount = (mapContainer.scrollWidth - mapContainer.clientWidth) / 2;
+      if (scrollAmount > 0) {
+        mapContainer.scrollLeft = scrollAmount;
+      }
+    };
+    centerScroll();
+    setTimeout(centerScroll, 150);
+    setTimeout(centerScroll, 400);
+  }
 });

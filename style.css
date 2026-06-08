@@ -1083,7 +1083,7 @@ footer .disclaimer {
   font-size: 0.85rem;
   color: var(--accent-blue);
   font-weight: 700;
-  margin-top: -1.5rem;
+  margin-top: 0.6rem;
   margin-bottom: 1.2rem;
   animation: pulse 2s infinite;
 }

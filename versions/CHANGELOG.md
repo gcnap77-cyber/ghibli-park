@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.27](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.27.txt)** (最新版本)
+- **[v1.0.28](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.28.txt)** (最新版本)
+  - *將左右滑動提示下移一排避免重疊，並實作手機載入網頁時互動地圖水平捲軸自動置中對齊，快取戳記為 v=28。*
+- **[v1.0.27](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.27.txt)**
   - *將公車與貓巴士路線大幅淡化，並調整大倉庫（E4）、魔女之谷（E3）與動動力森林（E7）的站牌標記與文字對齊方式，解決與區域去背圖示的重疊，快取戳記為 v=25。*
 - **[v1.0.26](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.26.txt)**
   - *修正 APM 貓巴士在互動地圖上的路徑軌跡與文字標籤，使其精準沿著莫里科羅公園最東側外圍的「外周通路」（車輛專用道路）繞行，快取戳記為 v=25。*
