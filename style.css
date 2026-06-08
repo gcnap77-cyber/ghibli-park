@@ -384,12 +384,12 @@ a:hover {
 
 /* Dondoko Only Ticket Card Styles */
 .ticket-badge.dondoko-only {
-  background-color: rgba(39, 116, 67, 0.15);
-  color: #277443;
-  border: 1px solid rgba(39, 116, 67, 0.3);
+  background-color: rgba(113, 211, 49, 0.15);
+  color: #4c9a1d;
+  border: 1px solid rgba(113, 211, 49, 0.3);
 }
 .ticket-card[data-ticket="dondoko-only"] h3 {
-  color: #277443 !important;
+  color: #4c9a1d !important;
 }
 
 .ticket-card h3 {
@@ -704,14 +704,14 @@ a:hover {
   transform: translateY(-3px);
 }
 
-/* 3. 動動力森林 (綠色 - 自訂圖片版) */
+/* 3. 動動力森林 (亮綠色 - 自訂圖片版) */
 #map-dondoko .map-area-image-custom {
   transition: var(--transition-normal);
-  filter: drop-shadow(0 2px 4px rgba(39, 116, 67, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(113, 211, 49, 0.35));
 }
 #map-dondoko:hover .map-area-image-custom,
 #map-dondoko.active .map-area-image-custom {
-  filter: drop-shadow(0 4px 12px rgba(39, 116, 67, 0.7)) brightness(1.08) contrast(1.05);
+  filter: drop-shadow(0 4px 12px rgba(113, 211, 49, 0.7)) brightness(1.08) contrast(1.05);
   transform: translateY(-3px);
 }
 
@@ -855,10 +855,10 @@ a:hover {
 .area-btn-youth { background-color: #0077b6 !important; }
 .area-btn-youth:hover { background-color: #005f92 !important; }
 
-/* 3. 動動力森林: 森林綠 (配合綠色圖示) */
-.title-dondoko { color: #277443 !important; }
-.area-btn-dondoko { background-color: #277443 !important; }
-.area-btn-dondoko:hover { background-color: #1e5a33 !important; }
+/* 3. 動動力森林: 亮綠色 (配合亮綠色圖示) */
+.title-dondoko { color: #4c9a1d !important; }
+.area-btn-dondoko { background-color: #71d331 !important; }
+.area-btn-dondoko:hover { background-color: #54a61c !important; }
 
 /* 4. 魔法之里: 紫色 (配合紫色圖示) */
 .title-mononoke { color: #7d409b !important; }
@@ -980,6 +980,24 @@ a:hover {
   background-color: rgba(230, 126, 34, 0.08);
   color: #d35400;
   border: 1px solid rgba(230, 126, 34, 0.15);
+}
+
+.status-theme-warehouse-only {
+  background-color: rgba(216, 92, 0, 0.08);
+  color: #d85c00;
+  border: 1px solid rgba(216, 92, 0, 0.15);
+}
+
+.status-theme-youth-only {
+  background-color: rgba(0, 119, 182, 0.08);
+  color: #0077b6;
+  border: 1px solid rgba(0, 119, 182, 0.15);
+}
+
+.status-theme-dondoko-only {
+  background-color: rgba(113, 211, 49, 0.08);
+  color: #4c9a1d;
+  border: 1px solid rgba(113, 211, 49, 0.15);
 }
 
 /* Card Content Column */
