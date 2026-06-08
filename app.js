@@ -200,6 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li class="unavailable">不含青春之丘、咚咚吭森林</li>
         <li class="unavailable">不可進入主題建築物內部</li>
         <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
+        <li style="color: var(--accent-gold); font-weight: 700; font-size: 0.82rem;">💡 可於「魔女之谷」現場加購當日券入內</li>
         <li style="color:var(--primary); font-weight:700; font-size:0.8rem; margin-top:0.4rem;">💡 這是海外遊客在 Lawson 英文官網 / Klook 買到的版本</li>
       `;
 
@@ -241,6 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li class="unavailable">不可進入主題建築物內部</li>
         <li>僅限外觀拍照與步道散步</li>
         <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
+        <li style="color: var(--accent-gold); font-weight: 700; font-size: 0.82rem;">💡 可於「魔女之谷」現場加購當日券入內</li>
         <li style="color:var(--primary); font-weight:700; font-size:0.8rem; margin-top:0.4rem;">💡 這是日本國內版 (需日本手機門號簡訊認證)</li>
       `;
 
