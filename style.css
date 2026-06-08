@@ -990,6 +990,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 4rem;
+  scroll-margin-top: 2rem;
 }
 
 .tips-card {

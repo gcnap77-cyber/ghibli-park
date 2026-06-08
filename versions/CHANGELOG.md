@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.38](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.38.txt)** (最新版本)
+- **[v1.0.39](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.39.txt)** (最新版本)
+  - *在左上角側邊欄選單（Drawer）中新增「遊玩與避坑指南」跳轉項目，設定對應 ID 與 2rem 頂端捲動邊距，快取戳記為 v=39。*
+- **[v1.0.38](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.38.txt)**
   - *修復手機版點選地圖跳轉時，目標卡片捲動位置過度偏上（標題跑至螢幕外被裁切）的問題，於手機版改用靠頂對齊並新增 2rem 頂端邊距，快取戳記為 v=38。*
 - **[v1.0.37](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.37.txt)**
   - *針對海外旅客模式，動態隱藏所有「里山券」或「里山散步券」的文字說明與列表項目，更新快取戳記為 v=37。*
