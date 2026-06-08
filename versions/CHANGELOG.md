@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.12](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.12.txt)** (最新版本)
+- **[v1.0.13](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.13.txt)** (最新版本)
+  - *於側欄導覽選單的最下方新增直達吉卜力公園官網的外部連結項目，並提供視覺分隔與高亮，快取升級 v=13。*
+- **[v1.0.12](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.12.txt)**
   - *於網頁最下方新增「常用官方與購票網站連結」區塊，整合精簡主頁面網址，快取升級 v=12。*
 - **[v1.0.11](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.11.txt)**
   - *將網站標題、元數據、側欄名稱及頁尾描述統一重命名為「購票導覽手冊」，快取升級 v=11。*
