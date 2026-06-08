@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.54](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.54.txt)** (最新版本)
+- **[v1.0.55](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.55.txt)** (最新版本)
+  - *將「大散步券 高級版」與「大散步券 標準版」標題中的「高級版」與「標準版」字眼改成各自的標籤色彩，並提升快取戳記至 v=55。*
+- **[v1.0.54](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.54.txt)**
   - *移除搶票提醒看板中的「(後天)」字眼，提昇時間表達精準度，快取戳記改為 v=54。*
 - **[v1.0.53](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.53.txt)**
   - *修補 JS 狀態過濾映射，將三款單獨園區券正確連結至獨立的園區主題狀態配色類別，解決顯示為舊橘色之 Bug，快取戳記改為 v=53。*
