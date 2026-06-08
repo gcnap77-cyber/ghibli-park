@@ -352,6 +352,9 @@ a:hover {
   color: #8e44ad;
   border: 1px solid rgba(142, 68, 173, 0.3);
 }
+.ticket-card[data-ticket="witches-mononoke"] h3 {
+  color: #8e44ad !important;
+}
 
 .ticket-badge.single-area {
   background-color: rgba(230, 126, 34, 0.15);

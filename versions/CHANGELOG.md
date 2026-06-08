@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.50](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.50.txt)** (最新版本)
+- **[v1.0.51](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.51.txt)** (最新版本)
+  - *將魔女與魔法套票卡片標題配色改為魔女紫色（#8e44ad）以同步徽章色彩，快取戳記改為 v=51。*
+- **[v1.0.50](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.50.txt)**
   - *將三個單獨園區門票的徽章及卡片標題（h3）配色分別改為對應園區的專屬色彩系統（橙、藍、綠），提昇視覺一體性，快取戳記改為 v=50。*
 - **[v1.0.49](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.49.txt)**
   - *重構展區狀態框的色彩與票券主題聯動邏輯：可進入/部分進入園區之狀態框色彩將動態與所選票卡代表色系同步，禁止進入則維持紅色，提升畫面精緻度與易讀性，快取戳記改為 v=49。*
