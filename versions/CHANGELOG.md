@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.10](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.10.txt)** (最新版本)
+- **[v1.0.11](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.11.txt)** (最新版本)
+  - *將網站標題、元數據、側欄名稱及頁尾描述統一重命名為「購票導覽手冊」，快取升級 v=11。*
+- **[v1.0.10](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.10.txt)**
   - *於右下角新增固定懸浮的「房屋造型 (🏠)」回到頂端按鈕，支援滑動動態顯隱與平滑置頂捲動，快取升級 v=10。*
 - **[v1.0.9](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.9.txt)**
   - *於左上角新增固定懸浮的「三個點 (⋮)」選單按鈕與滑出式側邊導覽選單（Drawer），方便使用者在行動與電腦端快速定位跳轉，快取升級 v=9。*
