@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.8](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.8.txt)** (最新版本)
+- **[v1.0.9](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.9.txt)** (最新版本)
+  - *於左上角新增固定懸浮的「三個點 (⋮)」選單按鈕與滑出式側邊導覽選單（Drawer），方便使用者在行動與電腦端快速定位跳轉，快取升級 v=9。*
+- **[v1.0.8](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.8.txt)**
   - *修復海外遊客模式下「里山散步券」遮罩內未隱藏「官網購票 ↗」連結的問題，快取升級 v=8。*
 - **[v1.0.7](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.7.txt)**
   - *重構園區介紹大標題連結排版，將官方連結移至標題下方，並修正大標題與按鈕的顏色，使其與該區的圖示顏色相同（橘、水藍、森林綠、紫、桃紅），快取升級 v=7。*

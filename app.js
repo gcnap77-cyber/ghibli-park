@@ -336,4 +336,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 7. Initialize page with 'overseas' and 'premium' ticket filter
   updateAudienceView();
+
+  // 8. Floating Menu Drawer toggle logic
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const menuCloseBtn = document.getElementById('menu-close-btn');
+  const sideNavDrawer = document.getElementById('side-nav-drawer');
+  const drawerOverlay = document.getElementById('drawer-overlay');
+  const drawerLinks = document.querySelectorAll('.drawer-link');
+
+  function openMenu() {
+    if (sideNavDrawer) sideNavDrawer.classList.add('open');
+    if (drawerOverlay) drawerOverlay.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+  }
+
+  function closeMenu() {
+    if (sideNavDrawer) sideNavDrawer.classList.remove('open');
+    if (drawerOverlay) drawerOverlay.classList.remove('show');
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener('click', openMenu);
+  }
+
+  if (menuCloseBtn) {
+    menuCloseBtn.addEventListener('click', closeMenu);
+  }
+
+  if (drawerOverlay) {
+    drawerOverlay.addEventListener('click', closeMenu);
+  }
+
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 });
