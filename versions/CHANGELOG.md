@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.31](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.31.txt)** (最新版本)
+- **[v1.0.32](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.32.txt)** (最新版本)
+  - *將大散步券（標準版）的 Klook 購票超連結全部更換為繁體中文（zh-TW）顯示頁面，快取戳記為 v=32。*
+- **[v1.0.31](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.31.txt)**
   - *於票種選擇區與避坑指南新增專屬「8 月門票搶票時間（台灣時間：6月10日下午13:00）」高亮提示橫幅，快取戳記為 v=31。*
 - **[v1.0.30](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.30.txt)**
   - *將 AI 模擬聲明字句精簡優化為「本圖為 AI 模擬試作，位置以官網地圖為準」，提升專業度，快取戳記為 v=30。*

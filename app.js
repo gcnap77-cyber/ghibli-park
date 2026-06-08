@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         standardOfficial.style.display = 'inline-flex';
       }
       if (standardKlook) {
-        standardKlook.setAttribute('href', 'https://www.klook.com/en-US/activity/132673-ghibli-park-ticket/?utm_medium=m_44824&utm_campaign=official_redirect&utm_source=merchant_referral');
+        standardKlook.setAttribute('href', 'https://www.klook.com/zh-TW/activity/132673-ghibli-park-ticket/?dd_referrer=');
         standardKlook.style.display = 'inline-flex';
       }
       if (satoyamaOfficial) {
