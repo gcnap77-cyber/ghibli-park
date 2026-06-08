@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.28](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.28.txt)** (最新版本)
+- **[v1.0.29](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.29.txt)** (最新版本)
+  - *於互動地圖上方新增「此地圖為 AI 模擬試作地圖，相關位置以官網地圖為主」說明與文字超連結，快取戳記為 v=29。*
+- **[v1.0.28](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.28.txt)**
   - *將左右滑動提示下移一排避免重疊，並實作手機載入網頁時互動地圖水平捲軸自動置中對齊，快取戳記為 v=28。*
 - **[v1.0.27](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.27.txt)**
   - *將公車與貓巴士路線大幅淡化，並調整大倉庫（E4）、魔女之谷（E3）與動動力森林（E7）的站牌標記與文字對齊方式，解決與區域去背圖示的重疊，快取戳記為 v=25。*
