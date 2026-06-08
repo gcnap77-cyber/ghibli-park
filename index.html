@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>吉卜力公園 x 莫里科羅公園 購票導覽手冊 | Ghibli Park Guide</title>
   <meta name="description" content="最容易理解的吉卜力公園繁體中文購票導覽！結合愛・地球博紀念公園（莫里科羅公園）交通指南，解析 2026 年最新門票種類（大散步券高級版、標準版、里山散步券）差別，提供互動式地圖，助您規劃完美吉卜力之旅。">
-  <link rel="stylesheet" href="style.css?v=21">
+  <link rel="stylesheet" href="style.css?v=22">
 </head>
 <body>
 
@@ -191,6 +191,10 @@
           <!-- Park Boundary of Aichi Expo Memorial Park (Moricoro Park) -->
           <path class="park-boundary-shape" d="M 380 30 C 220 30, 150 150, 150 250 C 150 350, 200 400, 350 420 C 500 440, 700 410, 730 320 C 760 230, 700 100, 550 80 C 450 70, 420 30, 380 30 Z" />
           
+          <!-- Linimo Railway Line (藤之丘 - 八草) -->
+          <path class="map-railway" d="M 50 40 L 750 40" />
+          <path class="map-railway-dash" d="M 50 40 L 750 40" />
+          
           <!-- Public pathways inside Moricoro Park -->
           <!-- Main Entrance Path -->
           <path class="map-road" d="M 400 40 L 400 120 L 400 200 L 430 220 L 510 200" />
@@ -208,10 +212,25 @@
           <path class="map-road-dash" d="M 400 120 C 250 120, 200 220, 250 320 C 300 380, 500 420, 650 350 C 700 280, 680 180, 550 130 C 510 130, 420 120, 400 120 Z" />
 
           <!-- Station / Park Entrance Node (Public Area) -->
+          <!-- Previous Station: 芸大通站 (往藤之丘) -->
+          <g transform="translate(180, 40)">
+            <circle r="7" fill="#7f8c8d" stroke="#fff" stroke-width="1.5" />
+            <text y="-12" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="#7f8c8d" text-anchor="middle">芸大通站 (往藤之丘)</text>
+            <text y="2.5" font-size="7" fill="#fff" text-anchor="middle">🚉</text>
+          </g>
+
+          <!-- Main Station: 愛・地球博紀念公園站 -->
           <g transform="translate(400, 40)">
             <circle r="12" fill="var(--secondary)" />
             <text y="-18" font-family="var(--font-zh)" font-size="10" font-weight="700" fill="var(--secondary)" text-anchor="middle">愛・地球博紀念公園站 (Linimo)</text>
             <text y="3" font-size="10" fill="#fff" text-anchor="middle">🚉</text>
+          </g>
+
+          <!-- Next Station: 陶磁資料館南站 (往八草) -->
+          <g transform="translate(620, 40)">
+            <circle r="7" fill="#7f8c8d" stroke="#fff" stroke-width="1.5" />
+            <text y="-12" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="#7f8c8d" text-anchor="middle">陶磁資料館南站 (往八草)</text>
+            <text y="2.5" font-size="7" fill="#fff" text-anchor="middle">🚉</text>
           </g>
 
           <!-- Free Elevator Tower Node (Public Area) -->
@@ -233,7 +252,7 @@
 
           <!-- Interactive Area: Valley of Witches (Custom Image Version) -->
           <g class="map-area-group" id="map-witches" data-area="witches">
-            <image class="map-area-image-custom" href="images/areas_witches_custom.png" x="140" y="274" width="160" height="71" />
+            <image class="map-area-image-custom" href="images/areas_witches_custom.png" x="635" y="185" width="150" height="66" />
           </g>
 
           <!-- Interactive Area: Mononoke Village (Custom Image Version) -->
@@ -272,7 +291,7 @@
           </g>
 
           <!-- Bus Stop 4: 日本庭園/魔女之谷巴士站 -->
-          <g transform="translate(265, 260)">
+          <g transform="translate(625, 250)">
             <circle r="6" fill="var(--accent-blue)" stroke="#fff" stroke-width="1.5" />
             <text x="-105" y="3" font-family="var(--font-zh)" font-size="8.5" font-weight="700" fill="var(--accent-blue)">日本庭園/魔女之谷站 🚏</text>
           </g>
@@ -745,6 +764,6 @@
     <span class="back-to-top-icon">🏠</span>
   </button>
 
-  <script src="app.js?v=21"></script>
+  <script src="app.js?v=22"></script>
 </body>
 </html>

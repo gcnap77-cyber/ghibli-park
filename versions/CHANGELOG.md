@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.21](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.21.txt)** (最新版本)
+- **[v1.0.22](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.22.txt)** (最新版本)
+  - *修正「魔女之谷」與巴士站位置至右側（東區），新增 Linimo 鐵路與前後站標示，快取戳記升級至 v=22。*
+- **[v1.0.21](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.21.txt)**
   - *將「吉卜力大倉庫」區域替換為自訂去背圖片，並加入橘色濾鏡與懸浮動畫，快取戳記升級至 v=21。*
 - **[v1.0.20](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.20.txt)**
   - *將「青春之丘」區域替換為自訂去背圖片，並加入水藍色濾鏡與懸浮動畫，快取戳記升級至 v=20。*
