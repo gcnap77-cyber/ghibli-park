@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.53](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.53.txt)** (最新版本)
+- **[v1.0.54](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.54.txt)** (最新版本)
+  - *移除搶票提醒看板中的「(後天)」字眼，提昇時間表達精準度，快取戳記改為 v=54。*
+- **[v1.0.53](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.53.txt)**
   - *修補 JS 狀態過濾映射，將三款單獨園區券正確連結至獨立的園區主題狀態配色類別，解決顯示為舊橘色之 Bug，快取戳記改為 v=53。*
 - **[v1.0.52](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.52.txt)**
   - *將動動力森林卡片標題及標籤配色改為亮綠色（#71d331），補全與調優三款單獨園區券之狀態框聯動配色，快取戳記改為 v=52。*
