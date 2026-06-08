@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.47](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.47.txt)** (最新版本)
+- **[v1.0.48](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.48.txt)** (最新版本)
+  - *將部分授權狀態（status-partial）的前置燈號圖示改為橘色圓圈 🟠，以適配優化後的琥珀橙主題，快取戳記改為 v=48。*
+- **[v1.0.47](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.47.txt)**
   - *修正部分限入狀態顏色（status-partial）為琥珀橙，避免與高級版金色徽章撞色混淆，快取戳記改為 v=47。*
 - **[v1.0.46](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.46.txt)**
   - *新增日本國內居民版限定之四種票券（魔女與魔法套票、大倉庫單獨券、青春之丘單獨券、動動力森林單獨券），並與地圖聯動，在海外旅客版中隱藏。加強說明魔女之谷三建築物當日券皆限量售完為止、霍爾城堡需時間整理券、其餘兩棟直接購買的規定，快取戳記改為 v=46。*

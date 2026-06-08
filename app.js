@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-partial',
-          text: '🟡 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。'
+          text: '🟠 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。'
         }
       },
       satoyama: {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-partial',
-          text: '🟡 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。'
+          text: '🟠 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。'
         }
       },
       satoyama: {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         dondoko: {
           status: 'status-partial',
-          text: '🟡 【部分授權】僅能走山頂步道參觀「咚咚吭堂（龍貓雕像）」，【無法進入】「皋月和梅的家」園區及室內。'
+          text: '🟠 【部分授權】僅能走山頂步道參觀「咚咚吭堂（龍貓雕像）」，【無法進入】「皋月和梅的家」園區及室內。'
         },
         mononoke: {
           status: 'status-allowed',
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-partial',
-          text: '🟡 【僅限外觀】可進入魔女之谷園區，但【無法進入】霍爾城堡等主題建築內部。'
+          text: '🟠 【僅限外觀】可進入魔女之谷園區，但【無法進入】霍爾城堡等主題建築內部。'
         }
       },
       'witches-mononoke': {
