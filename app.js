@@ -405,4 +405,45 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(centerScroll, 150);
     setTimeout(centerScroll, 400);
   }
+
+  // 11. JPY to TWD Currency Converter
+  const FALLBACK_RATE = 0.197;
+  const rateTextEl = document.getElementById('currency-rate-text');
+  const twdElements = document.querySelectorAll('.twd-price');
+
+  function updatePrices(rate, isFallback = false) {
+    twdElements.forEach(el => {
+      const jpyVal = parseInt(el.getAttribute('data-jpy'), 10);
+      if (!isNaN(jpyVal)) {
+        const twdVal = Math.round(jpyVal * rate);
+        const formattedTwd = twdVal.toLocaleString('zh-TW');
+        el.textContent = `(約 NT$ ${formattedTwd})`;
+      }
+    });
+
+    if (rateTextEl) {
+      const sourceInfo = isFallback ? '使用備用匯率' : '即時匯率換算';
+      const formattedRate = rate.toFixed(4);
+      rateTextEl.textContent = `${sourceInfo}：1 日圓 ≈ ${formattedRate} 台幣`;
+    }
+  }
+
+  async function fetchExchangeRate() {
+    try {
+      const response = await fetch('https://open.er-api.com/v6/latest/JPY');
+      if (!response.ok) throw new Error('API response was not ok');
+      const data = await response.json();
+      if (data && data.rates && typeof data.rates.TWD === 'number') {
+        const rate = data.rates.TWD;
+        updatePrices(rate, false);
+      } else {
+        throw new Error('Invalid data structure');
+      }
+    } catch (err) {
+      console.warn('Unable to fetch live JPY/TWD rate. Using fallback rate:', err);
+      updatePrices(FALLBACK_RATE, true);
+    }
+  }
+
+  fetchExchangeRate();
 });

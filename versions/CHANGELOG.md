@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.33](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.33.txt)** (最新版本)
+- **[v1.0.34](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.34.txt)** (最新版本)
+  - *新增日圓 (JPY) 兌台幣 (TWD) 即時匯率換算功能，支援自動 API 取得與備用離線匯率（0.197）Fallback 機制，更新快取戳記至 v=34。*
+- **[v1.0.33](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.33.txt)**
   - *將頁尾常用連結中的吉卜力公園官方網站連結變更為英文版官網，快取戳記為 v=33。*
 - **[v1.0.32](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.32.txt)**
   - *將大散步券（標準版）的 Klook 購票超連結全部更換為繁體中文（zh-TW）顯示頁面，快取戳記為 v=32。*
