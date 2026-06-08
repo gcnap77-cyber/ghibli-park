@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.35](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.35.txt)** (最新版本)
+- **[v1.0.36](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.36.txt)** (最新版本)
+  - *移除「特別設施當日入場券」加購價格旁的台幣匯率換算，簡化排版，防止畫面過於雜亂，更新快取戳記為 v=36。*
+- **[v1.0.35](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.35.txt)**
   - *新增「特別設施當日入場券」加購與整理券整合說明，明確標註魔女之谷建築加購方式與青春之丘/動動力森林無法現場加購的限制，快取戳記為 v=35。*
 - **[v1.0.34](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.34.txt)**
   - *新增日圓 (JPY) 兌台幣 (TWD) 即時匯率換算功能，支援自動 API 取得與備用離線匯率（0.197）Fallback 機制，更新快取戳記至 v=34。*
