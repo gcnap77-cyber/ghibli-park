@@ -185,6 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const standardOfficial = document.getElementById('standard-official-link');
     const standardKlook = document.getElementById('standard-klook-link');
     const satoyamaOfficial = document.getElementById('satoyama-official-link');
+    const satoyamaOnlyElements = document.querySelectorAll('.satoyama-only');
+    const satoyamaInlineSpans = document.querySelectorAll('.satoyama-text-inline');
 
     if (isOverseas) {
       toggleOverseas.classList.add('active');
@@ -193,6 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Hide satoyama badges in area cards
       areaSatoyamaBadges.forEach(badge => badge.style.display = 'none');
+
+      // Hide satoyama-only elements and inline texts
+      satoyamaOnlyElements.forEach(el => el.style.display = 'none');
+      satoyamaInlineSpans.forEach(el => el.style.display = 'none');
       
       // Update standard features list in card
       standardFeatures.innerHTML = `
@@ -235,6 +241,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Show satoyama badges in area cards
       areaSatoyamaBadges.forEach(badge => badge.style.display = 'inline-block');
+
+      // Show satoyama-only elements and inline texts
+      satoyamaOnlyElements.forEach(el => el.style.display = '');
+      satoyamaInlineSpans.forEach(el => el.style.display = 'inline');
       
       // Update standard features list in card
       standardFeatures.innerHTML = `
