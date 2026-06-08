@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.42](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.42.txt)** (最新版本)
+- **[v1.0.43](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.43.txt)** (最新版本)
+  - *修正大散步券標準版參觀範圍（限制 3 大園區）與修正日本居民版里山散步券票價（平日 ¥1000/假日 ¥1500），更新快取戳記為 v=43。*
+- **[v1.0.42](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.42.txt)**
   - *從側邊欄選單（Drawer）中移除「2026 票種攻略」跳轉選項，精簡選單，快取戳記改為 v=42。*
 - **[v1.0.41](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.41.txt)**
   - *徹底移除搶票提醒看板中的「註冊會員」相關敘述，使語句最簡潔，快取戳記改為 v=41。*

@@ -102,12 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
           text: '🟢 【可進入】可進入參觀大倉庫，包含所有內部展示與影院。'
         },
         youth: {
-          status: 'status-partial',
-          text: '🟡 【僅限外觀】可參觀青春之丘園區，但【無法進入】「地球屋」古董店建築物內部。'
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】大散步券標準版不包含青春之丘園區，僅能在免費公共步道遠眺。'
         },
         dondoko: {
-          status: 'status-partial',
-          text: '🟡 【僅限外觀】可參觀咚咚吭森林步道與山頂，但【無法進入】「皋月和梅的家」內部。'
+          status: 'status-blocked',
+          text: '🔴 【無入場資格】大散步券標準版不包含咚咚吭森林園區，僅能利用公共巴士站遠眺。'
         },
         mononoke: {
           status: 'status-allowed',
@@ -248,9 +248,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Update standard features list in card
       standardFeatures.innerHTML = `
-        <li class="standard-scope">暢遊全部 5 大園區 (室外區域)</li>
+        <li class="standard-scope"><strong>僅限 3 大園區</strong> (大倉庫、魔法之里、魔女之谷)</li>
+        <li class="unavailable">不含青春之丘、咚咚吭森林</li>
         <li class="unavailable">不可進入主題建築物內部</li>
-        <li>僅限外觀拍照與步道散步</li>
         <li style="color: var(--accent-red); font-weight: 700;">大倉庫需指定入場時段</li>
         <li style="color: var(--accent-gold); font-weight: 700; font-size: 0.82rem;">💡 可於「魔女之谷」現場加購當日券入內</li>
         <li style="color:var(--primary); font-weight:700; font-size:0.8rem; margin-top:0.4rem;">💡 這是日本國內版 (需日本手機門號簡訊認證)</li>
