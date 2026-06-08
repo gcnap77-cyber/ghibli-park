@@ -624,16 +624,15 @@ a:hover {
   filter: drop-shadow(0 2px 8px rgba(216,92,0,0.4));
 }
 
-/* 2. 青春之丘 (水藍色) */
-#map-youth .map-area-polygon {
-  stroke: #0077b6;
-  stroke-dasharray: none;
-  fill: rgba(0, 119, 182, 0.08);
+/* 2. 青春之丘 (水藍色 - 自訂圖片版) */
+#map-youth .map-area-image-custom {
+  transition: var(--transition-normal);
+  filter: drop-shadow(0 2px 4px rgba(0, 119, 182, 0.3));
 }
-#map-youth:hover .map-area-polygon,
-#map-youth.active .map-area-polygon {
-  fill: rgba(0, 119, 182, 0.25);
-  filter: drop-shadow(0 2px 8px rgba(0,119,182,0.4));
+#map-youth:hover .map-area-image-custom,
+#map-youth.active .map-area-image-custom {
+  filter: drop-shadow(0 4px 12px rgba(0, 119, 182, 0.7)) brightness(1.08) contrast(1.05);
+  transform: translateY(-3px);
 }
 
 /* 3. 動動力森林 (綠色 - 自訂圖片版) */
