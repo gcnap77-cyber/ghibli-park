@@ -321,7 +321,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Audience View Update function
   function updateAudienceView() {
     const areaSatoyamaBadges = document.querySelectorAll('.area-card .ticket-badge.satoyama');
-    const domesticOnlyBadges = document.querySelectorAll('.domestic-only-badge');
     const premiumOfficial = document.getElementById('premium-official-link');
     const premiumKlook = document.getElementById('premium-klook-link');
     const standardOfficial = document.getElementById('standard-official-link');
@@ -341,9 +340,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Hide satoyama badges in area cards
       areaSatoyamaBadges.forEach(badge => badge.style.display = 'none');
-
-      // Hide domestic-only badges (e.g. Standard badge in Youth & Dondoko)
-      domesticOnlyBadges.forEach(badge => badge.style.display = 'none');
 
       // Hide satoyama-only elements and inline texts
       satoyamaOnlyElements.forEach(el => el.style.display = 'none');
@@ -393,9 +389,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Show satoyama badges in area cards
       areaSatoyamaBadges.forEach(badge => badge.style.display = 'inline-block');
-
-      // Show domestic-only badges (e.g. Standard badge in Youth & Dondoko)
-      domesticOnlyBadges.forEach(badge => badge.style.display = 'inline-block');
 
       // Show satoyama-only elements and inline texts
       satoyamaOnlyElements.forEach(el => el.style.display = '');
