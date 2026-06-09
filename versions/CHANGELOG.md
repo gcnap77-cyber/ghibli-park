@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.62](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.62.txt)** (最新版本)
+- **[v1.0.63](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.63.txt)** (最新版本)
+  - *於「聯外交通指引」之「地鐵 ＋ Linimo 磁浮列車」段落新增平日早上通勤尖峰人潮擁擠的缺點提示，提升資訊完整性，快取戳記提升至 v=63。*
+- **[v1.0.62](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.62.txt)**
   - *於「魔女之谷」介紹卡片攻略與「避坑指南」中，補上「霍爾的移動城堡」當日加購整理券的背後運作原因（因空間狹窄、展品精美而有嚴格的同時入場人數限制），將快取戳記提升至 v=62。*
 - **[v1.0.61](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.61.txt)**
   - *將懸浮回到票種選擇按鈕在點選票卡時的背景與邊框色調整為對應的主題實體色（而非極淡 the 半透明色），並智慧過濾房屋 emoji 圖示為純白色房子，快取戳記提升至 v=61。*
