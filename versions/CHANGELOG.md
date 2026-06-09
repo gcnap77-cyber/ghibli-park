@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.63](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.63.txt)** (最新版本)
+- **[v1.0.64](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.64.txt)** (最新版本)
+  - *將「名鐵直達巴士」票價修正為官方最新價格 ¥1,200 (兒童 ¥600)，並新增說明該直達巴士為先到先得、無法事先預售座位之政策，快取戳記提升至 v=64。*
+- **[v1.0.63](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.63.txt)**
   - *於「聯外交通指引」之「地鐵 ＋ Linimo 磁浮列車」段落新增平日早上通勤尖峰人潮擁擠的缺點提示，提升資訊完整性，快取戳記提升至 v=63。*
 - **[v1.0.62](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.62.txt)**
   - *於「魔女之谷」介紹卡片攻略與「避坑指南」中，補上「霍爾的移動城堡」當日加購整理券的背後運作原因（因空間狹窄、展品精美而有嚴格的同時入場人數限制），將快取戳記提升至 v=62。*
