@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.59](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.59.txt)** (最新版本)
+- **[v1.0.60](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.60.txt)** (最新版本)
+  - *將懸浮按鈕定位重新分配至「票種選擇區」（#tickets），且按鈕背景與邊框能動態與當前選取的票券主題色相連動，快取戳記提升至 v=60。*
+- **[v1.0.59](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.59.txt)**
   - *於各展區介紹卡片圖示下方新增遊客平均停留時間標籤，並套用專屬色調以增強實用度與美觀度，快取戳記提升至 v=59。*
 - **[v1.0.58](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.58.txt)**
   - *將「青春之丘」與「動動力森林」介紹卡片中多餘且錯誤的「標準版可進 (外觀)」徽章標籤永久刪除（因不論國內版或海外版的大散步券標準版均僅限 3 個園區，不含此二園區），並將快取戳記提升至 v=58。*

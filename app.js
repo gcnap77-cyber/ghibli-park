@@ -276,6 +276,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Update back-to-top button theme class
+    const backToTopBtn = document.getElementById('back-to-top-btn');
+    if (backToTopBtn) {
+      const classesToRemove = [];
+      backToTopBtn.classList.forEach(cls => {
+        if (cls.startsWith('theme-')) {
+          classesToRemove.push(cls);
+        }
+      });
+      classesToRemove.forEach(cls => backToTopBtn.classList.remove(cls));
+      backToTopBtn.classList.add(`theme-${ticketType}`);
+    }
+
     // Update details card badges and text
     areaCards.forEach(card => {
       const areaName = card.getAttribute('data-areas');
@@ -549,10 +562,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+      const ticketsSection = document.getElementById('tickets');
+      if (ticketsSection) {
+        ticketsSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      } else {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
     });
   }
 

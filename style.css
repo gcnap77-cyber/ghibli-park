@@ -1637,6 +1637,83 @@ footer .disclaimer {
   border-color: var(--primary);
 }
 
+.back-to-top-btn.theme-premium {
+  background-color: rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+}
+.back-to-top-btn.theme-premium:hover {
+  background-color: #b08d13;
+  border-color: #b08d13;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.back-to-top-btn.theme-standard {
+  background-color: rgba(74, 144, 226, 0.15);
+  border-color: rgba(74, 144, 226, 0.5);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.15);
+}
+.back-to-top-btn.theme-standard:hover {
+  background-color: var(--accent-blue);
+  border-color: var(--accent-blue);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+.back-to-top-btn.theme-satoyama {
+  background-color: rgba(45, 90, 39, 0.15);
+  border-color: rgba(45, 90, 39, 0.5);
+  box-shadow: 0 4px 15px rgba(45, 90, 39, 0.15);
+}
+.back-to-top-btn.theme-satoyama:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 6px 20px rgba(45, 90, 39, 0.4);
+}
+
+.back-to-top-btn.theme-witches-mononoke {
+  background-color: rgba(142, 68, 173, 0.15);
+  border-color: rgba(142, 68, 173, 0.5);
+  box-shadow: 0 4px 15px rgba(142, 68, 173, 0.15);
+}
+.back-to-top-btn.theme-witches-mononoke:hover {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+  box-shadow: 0 6px 20px rgba(142, 68, 173, 0.4);
+}
+
+.back-to-top-btn.theme-warehouse-only {
+  background-color: rgba(216, 92, 0, 0.15);
+  border-color: rgba(216, 92, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(216, 92, 0, 0.15);
+}
+.back-to-top-btn.theme-warehouse-only:hover {
+  background-color: #d85c00;
+  border-color: #d85c00;
+  box-shadow: 0 6px 20px rgba(216, 92, 0, 0.4);
+}
+
+.back-to-top-btn.theme-youth-only {
+  background-color: rgba(0, 119, 182, 0.15);
+  border-color: rgba(0, 119, 182, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 119, 182, 0.15);
+}
+.back-to-top-btn.theme-youth-only:hover {
+  background-color: #0077b6;
+  border-color: #0077b6;
+  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+}
+
+.back-to-top-btn.theme-dondoko-only {
+  background-color: rgba(113, 211, 49, 0.15);
+  border-color: rgba(113, 211, 49, 0.5);
+  box-shadow: 0 4px 15px rgba(113, 211, 49, 0.15);
+}
+.back-to-top-btn.theme-dondoko-only:hover {
+  background-color: #4c9a1d;
+  border-color: #4c9a1d;
+  box-shadow: 0 6px 20px rgba(113, 211, 49, 0.4);
+}
+
 .back-to-top-icon {
   display: inline-block;
   transition: transform 0.3s ease;
