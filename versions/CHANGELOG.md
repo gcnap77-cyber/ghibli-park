@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.55](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.55.txt)** (最新版本)
+- **[v1.0.57](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.57.txt)** (最新版本)
+  - *針對海外旅客模式，動態隱藏青春之丘與動動力森林卡片左上角的「標準版可進 (外觀)」徽章標記，解決資訊顯示不一致問題，快取戳記提升至 v=57。*
+- **[v1.0.55](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.55.txt)**
   - *將「大散步券 高級版」與「大散步券 標準版」標題中的「高級版」與「標準版」字眼改成各自的標籤色彩，並提升快取戳記至 v=55。*
 - **[v1.0.54](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.54.txt)**
   - *移除搶票提醒看板中的「(後天)」字眼，提昇時間表達精準度，快取戳記改為 v=54。*
