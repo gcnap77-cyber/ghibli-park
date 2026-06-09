@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.60](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.60.txt)** (最新版本)
+- **[v1.0.61](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.61.txt)** (最新版本)
+  - *將懸浮回到票種選擇按鈕在點選票卡時的背景與邊框色調整為對應的主題實體色（而非極淡的半透明色），並智慧過濾房屋 emoji 圖示為純白色房子，快取戳記提升至 v=61。*
+- **[v1.0.60](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.60.txt)**
   - *將懸浮按鈕定位重新分配至「票種選擇區」（#tickets），且按鈕背景與邊框能動態與當前選取的票券主題色相連動，快取戳記提升至 v=60。*
 - **[v1.0.59](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.59.txt)**
   - *於各展區介紹卡片圖示下方新增遊客平均停留時間標籤，並套用專屬色調以增強實用度與美觀度，快取戳記提升至 v=59。*
