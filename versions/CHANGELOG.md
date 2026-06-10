@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.65](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.65.txt)** (最新版本)
+- **[v1.0.66](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.66.txt)** (最新版本)
+  - *修正 2026 年 7 月起之新入園規定中「魔女之谷」重複入園規則（經官方電話確認，新制實施後標準版與高級版旅客仍均可再次進入魔女之谷），快取戳記提升至 v=66。*
+- **[v1.0.65](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.65.txt)**
   - *新增再次入園（重複入場）政策指南，詳列目前規則與 2026 年 7 月起之新入園規定（包含大散步券高級版大倉庫下午 15:00 後再次入場之規定），快取戳記提升至 v=65。*
 - **[v1.0.64](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.64.txt)**
   - *將「名鐵直達巴士」票價修正為官方最新價格 ¥1,200 (兒童 ¥600)，並新增說明該直達巴士為先到先得、無法事先預售座位之政策，快取戳記提升至 v=64。*
