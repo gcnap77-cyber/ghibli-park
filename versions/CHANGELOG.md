@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.74](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.74.txt)** (最新版本)
+- **[v1.0.75](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.75.txt)** (最新版本)
+  - *刪除魔女之谷介紹卡片底下的再次入園政策警告條目，並更新快取戳記至 v=75。*
+- **[v1.0.74](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.74.txt)**
   - *為魔女與魔法套票新增魔女之谷再次入園新規說明，並更新快取戳記至 v=74。*
 - **[v1.0.73](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.73.txt)**
   - *為高級版再次入園大倉庫加註「2026年7月起」時間限制，並將再次入園條款中的里山券字眼包裹以在海外用戶模式下動態隱藏，快取戳記提升至 v=73。*
