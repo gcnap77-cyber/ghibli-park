@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.70](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.70.txt)** (最新版本)
+- **[v1.0.71](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.71.txt)** (最新版本)
+  - *簡化避坑指南及展區說明中的再次入園新規（大散步券高級版下午15:00可進入大倉庫，標準版及里山券僅魔女之谷可再次入園），快取戳記提升至 v=71。*
+- **[v1.0.70](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.70.txt)**
   - *移除新增的詳細實名制姓名鎖定及團體同行限制，並將護照身分查驗說明回復為簡化版，快取戳記提升至 v=70。*
 - **[v1.0.69](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.69.txt)**
   - *移除已過期的「防範信箱格式刷卡失敗 (RFC 標準)」避坑說明，並更新頁首與頁尾的版本號碼與快取戳記至 v=69。*
