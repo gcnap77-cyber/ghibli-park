@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-allowed',
-          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。'
+          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。新制起魔女之谷有再次入園權限。'
         }
       },
       standard: {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-partial',
-          text: '🟠 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。'
+          text: '🟠 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。新制起魔女之谷有再次入園權限。'
         }
       },
       satoyama: {
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-allowed',
-          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。'
+          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。新制起魔女之谷有再次入園權限。'
         }
       },
       standard: {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-partial',
-          text: '🟠 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。'
+          text: '🟠 【僅限外觀】可進入魔女之谷園區及搭乘遊樂設施，但【無法進入】「霍爾城堡」等主題建築內部。新制起魔女之谷有再次入園權限。'
         }
       },
       satoyama: {
@@ -157,15 +157,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         dondoko: {
           status: 'status-partial',
-          text: '🟠 【部分授權】僅能走山頂步道參觀「咚咚吭堂（龍貓雕像）」，【無法進入】「皋月和梅的家」園區及室內。'
+          text: '🟠 【部分授權】僅能走山頂步道參觀「咚咚吭堂（龍貓雕像）」，【無法進入】「皋月和梅的家」園區及室內。無指定入園時間，但全體需於當天 16:30 前到達！'
         },
         mononoke: {
           status: 'status-allowed',
-          text: '🟢 【可進入】可進入魔法之里，體驗炭烤五平餅與參觀達達拉城外觀。'
+          text: '🟢 【可進入】可進入魔法之里，體驗炭烤五平餅與參觀達達拉城外觀。無指定入園時間，但全體需於當天 16:30 前到達！'
         },
         witches: {
           status: 'status-partial',
-          text: '🟠 【僅限外觀】可進入魔女之谷園區，但【無法進入】霍爾城堡等主題建築內部。'
+          text: '🟠 【僅限外觀】請於 13:00 ~ 16:30 進入魔女之谷園區，【無法進入】霍爾城堡等主題建築內部。新制起魔女之谷有再次入園權限。'
         }
       },
       'witches-mononoke': {
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         witches: {
           status: 'status-allowed',
-          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。'
+          text: '🟢 【完全授權】可進入魔女之谷，包含進入「霍爾城堡」、「歐其諾家」、「魔女之家」室內觀看。新制起魔女之谷有再次入園權限。'
         }
       },
       'warehouse-only': {

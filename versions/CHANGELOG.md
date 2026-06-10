@@ -5,7 +5,9 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.66](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.66.txt)** (最新版本)
+- **[v1.0.68](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.68.txt)** (最新版本)
+  - *整合八月份里山散步券新規限制（魔女之谷 13:00~16:30 進入時限、其他區 16:30 到達限期與 ¥110 系統費），更正魔女之谷再次入園新規為所有適用票種（大散步券高級版/標準版、里山券）均可重複進入；新增 RFC 信用卡信箱扣款失敗避坑提醒、實名制護照核對與團體同行限制，快取戳記提升至 v=68。*
+- **[v1.0.66](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.66.txt)**
   - *修正 2026 年 7 月起之新入園規定中「魔女之谷」重複入園規則（經官方電話確認，新制實施後標準版與高級版旅客仍均可再次進入魔女之谷），快取戳記提升至 v=66。*
 - **[v1.0.65](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.65.txt)**
   - *新增再次入園（重複入場）政策指南，詳列目前規則與 2026 年 7 月起之新入園規定（包含大散步券高級版大倉庫下午 15:00 後再次入場之規定），快取戳記提升至 v=65。*
