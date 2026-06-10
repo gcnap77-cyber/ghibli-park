@@ -5,7 +5,11 @@
 ### 📋 歷史版本改動記錄列表
 您可以點擊下方連結直接開啟每次改動的詳細說明純文字檔：
 
-- **[v1.0.75](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.75.txt)** (最新版本)
+- **[v1.0.77](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.77.txt)** (最新版本)
+  - *移除動動力森林卡片中多餘的標準版限制條目，並在魔法之里卡片中新增標準版（及套票、里山券）禁止重複進入之警告，更新快取戳記至 v=77。*
+- **[v1.0.76](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.76.txt)**
+  - *刪除避坑指南中重複入場的條目，並在大倉庫介紹卡片的攻略中加註高級版再次入園吉卜力大倉庫的規定，更新快取戳記至 v=76。*
+- **[v1.0.75](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.75.txt)**
   - *刪除魔女之谷介紹卡片底下的再次入園政策警告條目，並更新快取戳記至 v=75。*
 - **[v1.0.74](file:///c:/Users/allendlester/Documents/antigravity/ghibli-park/versions/v1.0.74.txt)**
   - *為魔女與魔法套票新增魔女之谷再次入園新規說明，並更新快取戳記至 v=74。*
